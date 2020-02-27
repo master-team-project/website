@@ -1,0 +1,15 @@
+index:
+   path: /test
+   controller: App\Controller\DefaultTestController::index
+
+# default:
+#    path: /default
+#    controller: App\Controller\DefaultController::index
+
+api_route:
+  path: /json
+  controller: App\Controller\DefaultController::testJson
+
+# home:
+#   path: /home
+#   controller: App\Controller\MainController::index
