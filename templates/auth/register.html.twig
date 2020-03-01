@@ -2,26 +2,107 @@
 
 {% block title %} {{ parent() }} MBM - Register Page {% endblock %}
 
+{% block header '' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="css/mbm/register.css">
+{% endblock %}
+
 {% block content %}
 
-    <div class="body__overlay"></div>
-
-    <!-- Start Category Area -->
-    <section class="htc__category__area ptb--100">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="section__title--2 text-center">
-                        <h2 class="title__line">Inscription</h2>
-                        {# <p>Petite explication de notre concept</p> #}
-                    </div>
-                </div>
+    <div class="wrapper-content">
+        <div class="wrapper-content__container">
+            <div class="wrapper-content__container__left-side" style="background-image: url('images/bank/login.jpg');">
             </div>
-            <div class="htc__product__container">
-                {# Page Content #}
+            <div class="wrapper-content__container__right-side">
+                <form class="login-form validate-form">
+                    
+                    <span class="login-form__title">
+                        Inscription
+                    </span>
+
+                    <div class="login-form__timeline">
+                        <div class="login-form__timeline__span__wrap">
+                            <span class="login-form__timeline__span active">1</span>
+                            <span class="login-form__timeline__span_text">Infos personnelles</span>
+                        </div>
+                        <hr class="login-form__timeline__hr">
+                        <div class="login-form__timeline__span__wrap">
+                            <span class="login-form__timeline__span">2</span>
+                            <span class="login-form__timeline__span_text">Goûts</span>
+                        </div>
+                        <hr class="login-form__timeline__hr">
+                        <div class="login-form__timeline__span__wrap">
+                            <span class="login-form__timeline__span">3</span>
+                            <span class="login-form__timeline__span_text">Fin</span>
+                        </div>
+                    </div>
+
+                    <div class="login-form__input__wrap validate-input" data-validate="Name is required">
+                        <span class="login-form__input__label">Nom complet</span>
+                        <input class="login-form__input" type="text" name="name" placeholder="Nom...">
+                        <span class="login-form__input__focus"></span>
+                    </div>
+
+                    <div class="login-form__input__wrap validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                        <span class="login-form__input__label">Email</span>
+                        <input class="login-form__input" type="text" name="email" placeholder="Adresse email...">
+                        <span class="login-form__input__focus"></span>
+                    </div>
+
+                    <div class="login-form__input__wrap validate-input" data-validate="Username is required">
+                        <span class="login-form__input__label">Nom d'utilisateur</span>
+                        <input class="login-form__input" type="text" name="username" placeholder="Nom d'utilisateur...">
+                        <span class="login-form__input__focus"></span>
+                    </div>
+
+                    <div class="login-form__input__wrap validate-input" data-validate = "Password is required">
+                        <span class="login-form__input__label">Mot de passe</span>
+                        <input class="login-form__input" type="text" name="pass" placeholder="*************">
+                        <span class="login-form__input__focus"></span>
+                    </div>
+
+                    <div class="login-form__input__wrap validate-input" data-validate = "Repeat Password is required">
+                        <span class="login-form__input__label">Confirmation du mot de passe</span>
+                        <input class="login-form__input" type="text" name="repeat-pass" placeholder="*************">
+                        <span class="login-form__input__focus"></span>
+                    </div>
+
+                    <div class="flex-m w-full p-b-33">
+                        <div class="contact100-form-checkbox">
+                            <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+                            <label class="label-checkbox100" for="ckb1">
+                                <span class="txt1">
+                                    J'accepte les termes et CGV 
+                                    <a href="#" class="txt2 hov1">
+                                        Conditions d'utilisateur
+                                    </a>
+                                </span>
+                            </label>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="container-login-form-btn">
+                        <div class="wrap-login-form-btn">
+                            <div class="login-form-bgbtn"></div>
+                            <button class="login-form-btn">
+                                Suivant
+                            </button>
+                        </div>
+
+                        <a href="{{ path('login') }}" class="login-form__a__login">
+                            Connection
+                            <i class="fa fa-long-arrow-right m-l-5"></i>
+                        </a>
+                    </div>
+                </form>
             </div>
         </div>
-    </section>
-    <!-- End Category Area -->
+    </div>
        
 {% endblock %}
+
+{% block footer '' %}

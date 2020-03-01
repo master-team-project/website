@@ -12,7 +12,17 @@ class MainController extends AbstractController
      */
     public function home()
     {
-        return $this->render('home/index.html.twig', [
+        return $this->render('home/home.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+
+    /**
+     * @Route("/tpl", name="tpl")
+     */
+    public function template()
+    {
+        return $this->render('home/template.html.twig', [
             'controller_name' => 'MainController',
         ]);
     }
@@ -33,6 +43,16 @@ class MainController extends AbstractController
     public function signup()
     {
         return $this->render('auth/register.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+
+    /**
+     * @Route("/lost-password", name="lost-password")
+     */
+    public function lostPassword()
+    {
+        return $this->render('auth/lost-password.html.twig', [
             'controller_name' => 'MainController',
         ]);
     }

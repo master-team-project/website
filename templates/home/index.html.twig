@@ -2,13 +2,15 @@
 
 {% block title %} {{ parent() }} MBM - Home Page {% endblock %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="css/mbm/home.css">
+{% endblock %}
+
 {% block content %}
 
-    <div class="body__overlay"></div>
-
-    <!-- Start Offset Wrapper -->
+    {# Begin Section Search et Cart #}
     <div class="offset__wrapper">
-        <!-- Start Search Popap -->
         <div class="search__area">
             <div class="container" >
                 <div class="row" >
@@ -26,8 +28,6 @@
                 </div>
             </div>
         </div>
-        <!-- End Search Popap -->
-        <!-- Start Cart Panel -->
         <div class="shopping__cart">
             <div class="shopping__cart__inner">
                 <div class="offsetmenu__close__btn">
@@ -38,7 +38,6 @@
                         <div class="shp__pro__thumb">
                             <a href="#">
                                 <img src="images/product-2/sm-smg/1.jpg" alt="product images">
-                                {# <img src="images/iconeShop.png" alt="product images"> #}
                             </a>
                         </div>
                         <div class="shp__pro__details">
@@ -76,13 +75,13 @@
                 </ul>
             </div>
         </div>
-        <!-- End Cart Panel -->
     </div>
-    <!-- End Offset Wrapper -->
-    <!-- Start Slider Area -->
+    {# End Section Search et Cart #}
+
+    {# Begin Section Slider #}
     <div class="slider__container slider--one bg__cat--3">
         <div class="slide__container slider__activation__wrap owl-carousel">
-            <!-- Start Single Slide -->
+            <!-- Start Slide 1 -->
             <div class="single__slide animation__style01 slider__fixed--height">
                 <div class="container">
                     <div class="row align-items__center">
@@ -90,7 +89,7 @@
                             <div class="slide">
                                 <div class="slider__inner">
                                     <h2>Collection Homme 2020</h2>
-                                    <h1>MBM SHOP</h1>
+                                    <h1>MBM Shop</h1>
                                     <div class="cr__btn">
                                         <a href="{{ path('login') }}">Connection</a>
                                     </div>
@@ -99,15 +98,14 @@
                         </div>
                         <div class="col-lg-6 col-sm-5 col-xs-12 col-md-5">
                             <div class="slide__thumb">
-                                {# <img src="images/slider/fornt-img/1.png" alt="slider images"> #}
                                 <img src="images/magasin1.jpg" alt="slider images">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- End Single Slide -->
-            <!-- Start Single Slide -->
+            <!-- End Slide 1 -->
+            <!-- Start Slide 2 -->
             <div class="single__slide animation__style01 slider__fixed--height">
                 <div class="container">
                     <div class="row align-items__center">
@@ -115,7 +113,7 @@
                             <div class="slide">
                                 <div class="slider__inner">
                                     <h2>Collection Homme 2020</h2>
-                                    <h1>MBM SHOP</h1>
+                                    <h1>MBM Shop</h1>
                                     <div class="cr__btn">
                                         <a href="cart.html">Connection</a>
                                     </div>
@@ -130,12 +128,12 @@
                     </div>
                 </div>
             </div>
-            <!-- End Single Slide -->
+            <!-- End Slide 2 -->
         </div>
     </div>
+    {# End Section Slider #}
 
-    <!-- Start Category Area -->
-    <!-- Concept -->
+    {# Begin Section Concept #}
     <section class="htc__category__area ptb--100">
         <div class="container">
             <div class="row">
@@ -146,655 +144,78 @@
                     </div>
                 </div>
             </div>
-            <div class="htc__product__container">
-                <div class="row">
-                    <div class="product__list clearfix mt--30">
-                        <!-- Start Single Category -->
-                        <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
-                            <div class="category">
-                                <div class="ht__cat__thumb"> <!-- 290 x 385 -->
-                                    <a href="product-details.html">
-                                        {# <img src="images/product/1.jpg" alt="product images"> #}
-                                        {# <img src="images/_logo marque/etape1.png" alt="product images"> #}
-                                    </a>
-                                </div>
-                                {# <div class="fr__hover__info">
-                                    <ul class="product__action">
-                                        <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
-
-                                        <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
-
-                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
-                                    </ul>
-                                </div> #}
-                                <div class="fr__product__inner">
-                                    <img src="images/livraison.png" alt="product images">
-                                    <h4><a href="product-details.html">Je réponds au quizz</a></h4>
-                                    <p>En répondant au court quizz,  je donne toutes les informations  nécessaire à la personnalisation</p>
-                                    {# <h4><a href="product-details.html">Largest Water Pot</a></h4>
-                                    <ul class="fr__pro__prize">
-                                        <li class="old__prize">$30.3</li>
-                                        <li>$25.9</li>
-                                    </ul> #}
-                                </div>
-                            </div>
+            <div class="row">
+                <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
+                    <div class="category">
+                        <div class="fr__product__inner">
+                            <img src="images/livraison.png" alt="product images">
+                            <h4><a href="#">Je m'inscris et réponds au quizz</a></h4>
+                            <p>Présentez-vous à travers vos préférences, votre style, votre morphologie.</p>
                         </div>
-                        <!-- End Single Category -->
-                        <!-- Start Single Category -->
-                        <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
-                            <div class="category">
-                                <div class="ht__cat__thumb">
-                                    {# <a href="product-details.html"> #}
-                                        {# <img src="images/product/2.jpg" alt="product images"> #}
-                                        {# <img src="images/iconeShop.png" alt="product images"> #}
-                                    </a>
-                                </div>
-                                {# <div class="fr__hover__info">
-                                    <ul class="product__action">
-                                        <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
-
-                                        <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
-
-                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
-                                    </ul>
-                                </div> #}
-                                <div class="fr__product__inner">
-                                    <img src="images/engagement.png" alt="product images">
-                                    <h4><a href="product-details.html">J'accède à la boutique</a></h4>
-                                     <p>En répondant au court quizz,  je donne toutes les informations  nécessaire à la personnalisation</p>
-                                    {# <h4><a href="product-details.html">nemo enim ipsam</a></h4>
-                                    <ul class="fr__pro__prize">
-                                        <li class="old__prize">$30.3</li>
-                                        <li>$25.9</li>
-                                    </ul> #}
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
+                    <div class="category">
+                        <div class="fr__product__inner">
+                            <img src="images/engagement.png" alt="product images">
+                            <h4><a href="#">J'accède à une sélection personnalisée</a></h4>
+                            <p>Une liste d'articles, correspondant au plus prés de votre profil, vous est présentée.</p>
                         </div>
-                        <!-- End Single Category -->
-                        <!-- Start Single Category -->
-                        <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
-                            <div class="category">
-                                <div class="ht__cat__thumb">
-                                    <a href="product-details.html">
-                                        {# <img src="images/product/3.jpg" alt="product images"> #}
-                                        {# <img src="images/Iconechoix.png" alt="product images"> #}
-                                    </a>
-                                </div>
-                                {# <div class="fr__hover__info">
-                                    <ul class="product__action">
-                                        <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
-
-                                        <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
-
-                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
-                                    </ul>
-                                </div> #}
-                                <div class="fr__product__inner">
-                                    {# <h4><a href="product-details.html">Chair collection</a></h4>
-                                    <ul class="fr__pro__prize">
-                                        <li class="old__prize">$30.3</li>
-                                        <li>$25.9</li>
-                                    </ul> #}
-                                    <img src="images/chat.png" alt="product images">
-                                    <h4><a href="product-details.html">Je choisis des articles</a></h4>
-                                    <p>En répondant au court quizz,  je donne toutes les informations  nécessaire à la personnalisation</p>
-                                </div>
-                            </div>
+                    </div>
+                 </div>
+                <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
+                    <div class="category">
+                        <div class="fr__product__inner">
+                            <img src="images/chat.png" alt="product images">
+                            <h4><a href="#">Je choisis des articles</a></h4>
+                            <p>Vous avez l'opportunité de choisir des artilces parmi un grand nombre.</p>
                         </div>
-                        <!-- End Single Category -->
-                        <!-- Start Single Category -->
-                        <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
-                            <div class="category">
-                                <div class="ht__cat__thumb">
-                                    <a href="product-details.html">
-                                        {# <img src="images/product/4.jpg" alt="product images"> #}
-                                        {# <img src="images/iconePaiement.png" alt="product images"> #}
-                                    </a>
-                                </div>
-                                {# <div class="fr__hover__info">
-                                    <ul class="product__action">
-                                        <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
-
-                                        <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
-
-                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
-                                    </ul>
-                                </div> #}
-                                <div class="fr__product__inner">
-                                    {# <h4><a href="product-details.html">dummy Product name</a></h4>
-                                    <ul class="fr__pro__prize">
-                                        <li class="old__prize">$30.3</li>
-                                        <li>$25.9</li>
-                                    </ul> #}
-                                    <img src="images/cb.png" alt="product images">
-                                    <h4><a href="product-details.html">Je valide ma commande</a></h4>
-                                    <p>En répondant au court quizz,  je donne toutes les informations  nécessaire à la personnalisation</p>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
+                    <div class="category">
+                        <div class="fr__product__inner">
+                            <img src="images/cb.png" alt="product images">
+                            <h4><a href="product-details.html">Je valide ma commande</a></h4>
+                            <p>Vous pouvez finaliser votre commande ou conserver les choix exprimés.</p>
                         </div>
-                        <!-- End Single Category -->
-                        <!-- Start Single Category -->
-                        {# <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
-                            <div class="category">
-                                <div class="ht__cat__thumb">
-                                    <a href="product-details.html">
-                                        <img src="images/product/5.jpg" alt="product images">
-                                    </a>
-                                </div>
-                                <div class="fr__hover__info">
-                                    <ul class="product__action">
-                                        <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
-
-                                        <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
-
-                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="fr__product__inner">
-                                    <h4><a href="product-details.html">donec ac tempus nrb</a></h4>
-                                    <ul class="fr__pro__prize">
-                                        <li class="old__prize">$30.3</li>
-                                        <li>$25.9</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div> #}
-                        <!-- End Single Category -->
-                        <!-- Start Single Category -->
-                        {# <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
-                            <div class="category">
-                                <div class="ht__cat__thumb">
-                                    <a href="product-details.html">
-                                        <img src="images/product/6.jpg" alt="product images">
-                                    </a>
-                                </div>
-                                <div class="fr__hover__info">
-                                    <ul class="product__action">
-                                        <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
-
-                                        <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
-
-                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="fr__product__inner">
-                                    <h4><a href="product-details.html">Product Title Here </a></h4>
-                                    <ul class="fr__pro__prize">
-                                        <li class="old__prize">$30.3</li>
-                                        <li>$25.9</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div> #}
-                        <!-- End Single Category -->
-                        <!-- Start Single Category -->
-                        {# <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
-                            <div class="category">
-                                <div class="ht__cat__thumb">
-                                    <a href="product-details.html">
-                                        <img src="images/product/7.jpg" alt="product images">
-                                    </a>
-                                </div>
-                                <div class="fr__hover__info">
-                                    <ul class="product__action">
-                                        <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
-
-                                        <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
-
-                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="fr__product__inner">
-                                    <h4><a href="product-details.html">Product Title Here </a></h4>
-                                    <ul class="fr__pro__prize">
-                                        <li class="old__prize">$30.3</li>
-                                        <li>$25.9</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div> #}
-                        <!-- End Single Category -->
-                        <!-- Start Single Category -->
-                        {# <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
-                            <div class="category">
-                                <div class="ht__cat__thumb">
-                                    <a href="product-details.html">
-                                        <img src="images/product/8.jpg" alt="product images">
-                                    </a>
-                                </div>
-                                <div class="fr__hover__info">
-                                    <ul class="product__action">
-                                        <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
-
-                                        <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
-
-                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="fr__product__inner">
-                                    <h4><a href="product-details.html">Product Title Here </a></h4>
-                                    <ul class="fr__pro__prize">
-                                        <li class="old__prize">$30.3</li>
-                                        <li>$25.9</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div> #}
-                        <!-- End Single Category -->
+                    </div>
+                </div>
+            </div>
+            <div class="row row__concept">
+                <div class="col-md-8 col-xs-12 concept__wrap__img">
+                   <img src="./images/bank/store-1.jpg" alt="shopping">  
+                </div>
+                <div class="col-md-4 col-xs-12 concept__wrap__txt">
+                    <div class="wrap__concept__wrap__txt">
+                        <div class="concept__txt">
+                            <h3>Sélection 100% personnalisée</h3>
+                            <p>Votre styliste compose vos looks en fonction de vos goûts, votre morphologie et vos besoins.</p>
+                        </div> 
+                        <div class="concept__txt">
+                            <h3>+ de 15 marques partenaires</h3>
+                            <p>Nous sélectionnons nos marques d'abord pour la qualité de leurs pièces, et pour les engagements éco-responsables.</p>
+                        </div>    
+                        <div class="concept__txt">
+                            <h3>Livraison et retour gratuit</h3>
+                            <p>Faites vous livrer où vous le souhaitez : chez vous, à votre bureau ou en point relais. Le kit de retour est inclus.</p>
+                        </div> 
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End Category Area -->
+    {# End Section Concept #}
 
-    <!-- Start Prize Good Area -->
-    <!-- Looks -->
-    <section class="htc__good__sale bg__cat--3">
+    {# Begin Section Marques #}
+    <div class="htc__brand__area bg__cat--4" style="padding-top: 100px">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
                     <div class="section__title--2 text-center">
-                        <h2 class="title__line" style="margin-top: -100px">Styles</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="margin-bottom: 15px">
-                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
-                    <div class="fr__prize__inner">
-                        <h2>CHIC</h2>
-                        <h3>Professor at Hamp deny dney College.</h3>
-                        <a class="fr__btn" href="#">Read More</a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
-                    <div class="prize__inner">
-                        <div class="prize__thumb">
-                            <img src="images/Chic.jpg" alt="banner images">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="margin-bottom: 15px">
-                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
-                    <div class="prize__inner">
-                        <div class="prize__thumb">
-                            <img src="images/Casual.jpg" alt="banner images">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
-                    <div class="fr__prize__inner">
-                        <h2>CASUAL</h2>
-                        <h3>Professor at Hamp deny dney College.</h3>
-                        <a class="fr__btn" href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="margin-bottom: 15px">
-                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
-                    <div class="fr__prize__inner">
-                        <h2>STREET</h2>
-                        <h3>Professor at Hamp deny dney College.</h3>
-                        <a class="fr__btn" href="#">Read More</a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
-                    <div class="prize__inner">
-                        <div class="prize__thumb">
-                            <img src="images/Street.jpg" alt="banner images">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="margin-bottom: 15px">
-                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
-                    <div class="prize__inner">
-                        <div class="prize__thumb">
-                            <img src="images/Casual.jpg" alt="banner images">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
-                    <div class="fr__prize__inner">
-                        <h2>DECONTRACTE</h2>
-                        <h3>Professor at Hamp deny dney College.</h3>
-                        <a class="fr__btn" href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
-                    <div class="fr__prize__inner">
-                        <h2>SOIREE</h2>
-                        <h3>Professor at Hamp deny dney College.</h3>
-                        <a class="fr__btn" href="#">Read More</a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
-                    <div class="prize__inner">
-                        <div class="prize__thumb">
-                            <img src="images/Soirée.jpg" alt="banner images">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Prize Good Area -->
-
-    <!-- Start Product Area -->
-    {# <section class="ftr__product__area ptb--100">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="section__title--2 text-center">
-                        <h2 class="title__line">Styles</h2>
-                        <p>But I must explain to you how all this mistaken idea</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="product__wrap clearfix">
-                    <!-- Start Single Category -->
-                    <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
-                        <div class="category">
-                            <div class="ht__cat__thumb">
-                                <a href="product-details.html">
-                                    <img src="images/product/9.jpg" alt="product images">
-                                </a>
-                            </div>
-                            <div class="fr__hover__info">
-                                <ul class="product__action">
-                                    <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
-
-                                    <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
-
-                                    <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="fr__product__inner">
-                                <h4><a href="product-details.html">Special Wood Basket</a></h4>
-                                <ul class="fr__pro__prize">
-                                    <li class="old__prize">$30.3</li>
-                                    <li>$25.9</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Category -->
-                    <!-- Start Single Category -->
-                    <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
-                        <div class="category">
-                            <div class="ht__cat__thumb">
-                                <a href="product-details.html">
-                                    <img src="images/product/10.jpg" alt="product images">
-                                </a>
-                            </div>
-                            <div class="fr__hover__info">
-                                <ul class="product__action">
-                                    <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
-
-                                    <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
-
-                                    <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="fr__product__inner">
-                                <h4><a href="product-details.html">voluptatem accusantium</a></h4>
-                                <ul class="fr__pro__prize">
-                                    <li class="old__prize">$30.3</li>
-                                    <li>$25.9</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Category -->
-                    <!-- Start Single Category -->
-                    <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
-                        <div class="category">
-                            <div class="ht__cat__thumb">
-                                <a href="product-details.html">
-                                    <img src="images/product/11.jpg" alt="product images">
-                                </a>
-                            </div>
-                            <div class="fr__hover__info">
-                                <ul class="product__action">
-                                    <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
-
-                                    <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
-
-                                    <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="fr__product__inner">
-                                <h4><a href="product-details.html">Product Dummy Name</a></h4>
-                                <ul class="fr__pro__prize">
-                                    <li class="old__prize">$30.3</li>
-                                    <li>$25.9</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Category -->
-                    <!-- Start Single Category -->
-                    <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
-                        <div class="category">
-                            <div class="ht__cat__thumb">
-                                <a href="product-details.html">
-                                    <img src="images/product/12.jpg" alt="product images">
-                                </a>
-                            </div>
-                            <div class="fr__hover__info">
-                                <ul class="product__action">
-                                    <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
-
-                                    <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
-
-                                    <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="fr__product__inner">
-                                <h4><a href="product-details.html">Product Title Here </a></h4>
-                                <ul class="fr__pro__prize">
-                                    <li class="old__prize">$30.3</li>
-                                    <li>$25.9</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Category -->
-                </div>
-            </div>
-        </div>
-    </section> #}
-    <!-- End Product Area -->
-
-    <!-- Start Testimonial Area -->
-    {# <section class="htc__testimonial__area bg__cat--4">
-        <div class="container">
-            <div class="row">
-                <div class="ht__testimonial__activation clearfix">
-                    <!-- Start Single Testimonial -->
-                    <div class="col-lg-6 col-md-6 single__tes">
-                        <div class="testimonial">
-                            <div class="testimonial__thumb">
-                                <img src="images/test/client/1.png" alt="testimonial images">
-                            </div>
-                            <div class="testimonial__details">
-                                <h4><a href="#">Mr.Mike Band</a></h4>
-                                <p>I’m up to something. Stay focused. The weather is amazing, walk with me through the pathway of more success. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Testimonial -->
-                    <!-- Start Single Testimonial -->
-                    <div class="col-lg-6 col-md-6 single__tes">
-                        <div class="testimonial">
-                            <div class="testimonial__thumb">
-                                <img src="images/test/client/2.png" alt="testimonial images">
-                            </div>
-                            <div class="testimonial__details">
-                                <h4><a href="#">Ms.Lucy Barton</a></h4>
-                                <p>I’m up to something. Stay focused. The weather is amazing, walk with me through the pathway of more success. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Testimonial -->
-                    <!-- Start Single Testimonial -->
-                    <div class="col-lg-6 col-md-6 single__tes">
-                        <div class="testimonial">
-                            <div class="testimonial__thumb">
-                                <img src="images/test/client/1.png" alt="testimonial images">
-                            </div>
-                            <div class="testimonial__details">
-                                <h4><a href="#">Ms.Lucy Barton</a></h4>
-                                <p>I’m up to something. Stay focused. The weather is amazing, walk with me through the pathway of more success. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Testimonial -->
-                    <!-- Start Single Testimonial -->
-                    <div class="col-lg-6 col-md-6 single__tes">
-                        <div class="testimonial">
-                            <div class="testimonial__thumb">
-                                <img src="images/test/client/2.png" alt="testimonial images">
-                            </div>
-                            <div class="testimonial__details">
-                                <h4><a href="#">Ms.Lucy Barton</a></h4>
-                                <p>I’m up to something. Stay focused. The weather is amazing, walk with me through the pathway of more success. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Testimonial -->
-                </div>
-            </div>
-        </div>
-    </section> #}
-    <!-- End Testimonial Area -->
-
-    <!-- Start Top Rated Area -->
-    <section class="top__rated__area bg__white pt--100 pb--110">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section__title--2 text-center">
-                        <h2 class="title__line">Top Avantages</h2>
-                        <p>Quelques explications</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt--20">
-                <!-- Start Single Product -->
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    <div class="htc__best__product">
-                        <div class="htc__best__pro__thumb">
-                            <a href="product-details.html">
-                                <img src="images/product-2/sm-img-2/1.jpg" alt="small product">
-                            </a>
-                        </div>
-                        <div class="htc__best__product__details">
-                            <h2><a href="product-details.html">Sélection 100% personnalisée</a></h2>
-                            {# <ul class="rating">
-                                <li><i class="icon-star icons"></i></li>
-                                <li><i class="icon-star icons"></i></li>
-                                <li><i class="icon-star icons"></i></li>
-                                <li class="old"><i class="icon-star icons"></i></li>
-                                <li class="old"><i class="icon-star icons"></i></li>
-                            </ul>
-                            <ul  class="top__pro__prize">
-                                <li class="old__prize">$82.5</li>
-                                <li>$75.2</li>
-                            </ul>
-                            <div class="best__product__action">
-                                <ul class="product__action--dft">
-                                    <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
-                                    <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
-                                    <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
-                                </ul>
-                            </div> #}
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Product -->
-                <!-- Start Single Product -->
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    <div class="htc__best__product">
-                        <div class="htc__best__pro__thumb">
-                            <a href="product-details.html">
-                                <img src="images/product-2/sm-img-2/2.jpg" alt="small product">
-                            </a>
-                        </div>
-                        <div class="htc__best__product__details">
-                            <h2><a href="product-details.html">+ de 15 marques partenaires</a></h2>
-                            {# <ul class="rating">
-                                <li><i class="icon-star icons"></i></li>
-                                <li><i class="icon-star icons"></i></li>
-                                <li><i class="icon-star icons"></i></li>
-                                <li class="old"><i class="icon-star icons"></i></li>
-                                <li class="old"><i class="icon-star icons"></i></li>
-                            </ul>
-                            <ul  class="top__pro__prize">
-                                <li class="old__prize">$82.5</li>
-                                <li>$75.2</li>
-                            </ul>
-                            <div class="best__product__action">
-                                <ul class="product__action--dft">
-                                    <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
-                                    <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
-                                    <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
-                                </ul>
-                            </div> #}
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Product -->
-                <!-- Start Single Product -->
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    <div class="htc__best__product">
-                        <div class="htc__best__pro__thumb">
-                            <a href="product-details.html">
-                                <img src="images/product-2/sm-img-2/3.jpg" alt="small product">
-                            </a>
-                        </div>
-                        <div class="htc__best__product__details">
-                            <h2><a href="product-details.html">Livraison et retour gratuit</a></h2>
-                            {# <ul class="rating">
-                                <li><i class="icon-star icons"></i></li>
-                                <li><i class="icon-star icons"></i></li>
-                                <li><i class="icon-star icons"></i></li>
-                                <li class="old"><i class="icon-star icons"></i></li>
-                                <li class="old"><i class="icon-star icons"></i></li>
-                            </ul>
-                            <ul  class="top__pro__prize">
-                                <li class="old__prize">$82.5</li>
-                                <li>$75.2</li>
-                            </ul>
-                            <div class="best__product__action">
-                                <ul class="product__action--dft">
-                                    <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
-                                    <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
-                                    <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
-                                </ul>
-                            </div> #}
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Product -->
-            </div>
-        </div>
-    </section>
-    <!-- End Top Rated Area -->
-
-    <!-- Start Brand Area -->
-    <!-- Marques -->
-    <div class="htc__brand__area bg__cat--4">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="section__title--2 text-center">
-                        <h2 class="title__line" style="padding-top: 10px">Marques</h2>
-                        {# <p>Nos marques partenaires</p> #}
+                        {# <h2 class="title__line" style="padding-top: 25px">Marques Partenaires</h2> #}
+                        <h2 class="title__line">Marques Partenaires</h2>
+                        <p>LoremLoremLoremLoremLoremLoremLoremLoremLorem</p>
                     </div>
                 </div>
             </div>
@@ -808,22 +229,15 @@
                             <li><a href="#"><img src="images/_logo marque/hm.png" alt="brand images"></a></li>
                             <li><a href="#"><img src="images/_logo marque/levis.png" alt="brand images"></a></li>
                             <li><a href="#"><img src="images/_logo marque/armand_thierry.png" alt="brand images"></a></li>
-                            {# <li><a href="#"><img src="images/brand/2.png" alt="brand images"></a></li>
-                            <li><a href="#"><img src="images/brand/3.png" alt="brand images"></a></li>
-                            <li><a href="#"><img src="images/brand/4.png" alt="brand images"></a></li>
-                            <li><a href="#"><img src="images/brand/5.png" alt="brand images"></a></li>
-                            <li><a href="#"><img src="images/brand/5.png" alt="brand images"></a></li>
-                            <li><a href="#"><img src="images/brand/1.png" alt="brand images"></a></li>
-                            <li><a href="#"><img src="images/brand/2.png" alt="brand images"></a></li> #}
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Brand Area -->
+    {# End Section Marques #}
 
-    <!-- Start Blog Area -->
+    {# Begin Section Blog #}
     <section class="htc__blog__area bg__white ptb--100">
         <div class="container">
             <div class="row">
@@ -840,18 +254,18 @@
                     <div class="col-md-6 col-lg-4 col-sm-6 col-xs-12">
                         <div class="blog">
                             <div class="blog__thumb">
-                                <a href="blog-details.html">
-                                    <img src="images/blog1.jpg" alt="blog images">
+                                <a href="#">
+                                    <img src="images/mek_blog/Esprit.jpg" alt="blog images">
                                 </a>
                             </div>
                             <div class="blog__details">
                                 <div class="bl__date">
                                     <span>25 Février 2020</span>
                                 </div>
-                                <h2><a href="blog-details.html">Lorem ipsum dolor sit amet, consec tetur adipisicing elit</a></h2>
+                                <h2><a href="#">Esprit réduit la voilure et ses pertes</a></h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 <div class="blog__btn">
-                                    <a href="blog-details.html">Plus d'infos</a>
+                                    <a href="#">Plus d'infos</a>
                                 </div>
                             </div>
                         </div>
@@ -861,18 +275,18 @@
                     <div class="col-md-6 col-lg-4 col-sm-6 col-xs-12">
                         <div class="blog">
                             <div class="blog__thumb">
-                                <a href="blog-details.html">
-                                    <img src="images/blog1.jpg" alt="blog images">
+                                <a href="#">
+                                    <img src="images/mek_blog/Zalando.jpg" alt="blog images">
                                 </a>
                             </div>
                             <div class="blog__details">
                                 <div class="bl__date">
                                     <span>26 Février 2020</span>
                                 </div>
-                                <h2><a href="blog-details.html">Lorem ipsum dolor sit amet, consec tetur adipisicing elit</a></h2>
+                                <h2><a href="#">Zalando accélère sa croissance hors d'Allemagne en 2019</a></h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 <div class="blog__btn">
-                                    <a href="blog-details.html">Plus d'infos</a>
+                                    <a href="#">Plus d'infos</a>
                                 </div>
                             </div>
                         </div>
@@ -882,18 +296,18 @@
                     <div class="col-md-6 col-lg-4 col-sm-6 col-xs-12">
                         <div class="blog">
                             <div class="blog__thumb">
-                                <a href="blog-details.html">
-                                    <img src="images/blog1.jpg" alt="blog images">
+                                <a href="#">
+                                    <img src="images/mek_blog/Abloh.jpg" alt="blog images">
                                 </a>
                             </div>
                             <div class="blog__details">
                                 <div class="bl__date">
                                     <span>27 Février 2020</span>
                                 </div>
-                                <h2><a href="blog-details.html">Lorem ipsum dolor sit amet, consec tetur adipisicing elit</a></h2>
+                                <h2><a href="#">Avec Off-White, Virgil Abloh s'embourgeoise</a></h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 <div class="blog__btn">
-                                    <a href="blog-details.html">Plus d'infos</a>
+                                    <a href="#">Plus d'infos</a>
                                 </div>
                             </div>
                         </div>
@@ -903,6 +317,6 @@
             </div>
         </div>
     </section>
-    <!-- End Blog Area -->
+    {# End Section Blog #}
 
 {% endblock %}

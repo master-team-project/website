@@ -1,0 +1,85 @@
+.home__wrapper {
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+.row__concept {
+    display: flex;
+    margin-top: 75px;
+}
+
+.concept__wrap__img {
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.concept__wrap__img img {
+    /* justify-content: flex-end; */
+    /* width: 400px; */
+    min-width: 100%;
+}
+
+.wrap__concept__wrap__txt {
+    /* background-color: azure; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.concept__wrap__txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+.concept__txt {
+    margin-top: 10px;
+    /* background-color: azure; */
+    margin-top: 25px;
+}
+
+.concept__txt h3 {
+    color: #444;
+    font-family: Old Standard TT;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: all 0.3s ease 0s;
+    margin-bottom: 15px;
+}
+
+.wrapper__looks {
+    padding-top: 50px;
+    /* padding-bottom: 50px; */
+}
+
+#concept .row__concept img {
+    /* border: 10px solid navy; */
+    max-width: 640px;
+}
+
+#blog img {
+    /* border: 10px solid navy; */
+    max-width: 250px;
+}
+
+
+/* Media queries Bootstrap */
+
+
+/* @media(max-width:480px) {} */
+
+@media(max-width:767px) {}
+
+@media(min-width:768px) {}
+
+@media(min-width:992px) {}
+
+@media(min-width:1200px) {}

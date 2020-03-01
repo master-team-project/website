@@ -1,0 +1,564 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ parent() }} MBM - Home Page {% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="css/mbm/home.css">
+{% endblock %}
+
+{% block content %}
+
+    {# Begin Section Search et Cart #}
+    <div class="offset__wrapper">
+        <div class="search__area">
+            <div class="container" >
+                <div class="row" >
+                    <div class="col-md-12" >
+                        <div class="search__inner">
+                            <form action="#" method="get">
+                                <input placeholder="Search here... " type="text">
+                                <button type="submit"></button>
+                            </form>
+                            <div class="search__close__btn">
+                                <span class="search__close__btn_icon"><i class="zmdi zmdi-close"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shopping__cart">
+            <div class="shopping__cart__inner">
+                <div class="offsetmenu__close__btn">
+                    <a href="#"><i class="zmdi zmdi-close"></i></a>
+                </div>
+                <div class="shp__cart__wrap">
+                    <div class="shp__single__product">
+                        <div class="shp__pro__thumb">
+                            <a href="#">
+                                <img src="images/product-2/sm-smg/1.jpg" alt="product images">
+                            </a>
+                        </div>
+                        <div class="shp__pro__details">
+                            <h2><a href="product-details.html">BO&Play Wireless Speaker</a></h2>
+                            <span class="quantity">QTY: 1</span>
+                            <span class="shp__price">$105.00</span>
+                        </div>
+                        <div class="remove__btn">
+                            <a href="#" title="Remove this item"><i class="zmdi zmdi-close"></i></a>
+                        </div>
+                    </div>
+                    <div class="shp__single__product">
+                        <div class="shp__pro__thumb">
+                            <a href="#">
+                                <img src="images/product-2/sm-smg/2.jpg" alt="product images">
+                            </a>
+                        </div>
+                        <div class="shp__pro__details">
+                            <h2><a href="product-details.html">Brone Candle</a></h2>
+                            <span class="quantity">QTY: 1</span>
+                            <span class="shp__price">$25.00</span>
+                        </div>
+                        <div class="remove__btn">
+                            <a href="#" title="Remove this item"><i class="zmdi zmdi-close"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="shoping__total">
+                    <li class="subtotal">Subtotal:</li>
+                    <li class="total__price">$130.00</li>
+                </ul>
+                <ul class="shopping__btn">
+                    <li><a href="cart.html">View Cart</a></li>
+                    <li class="shp__checkout"><a href="checkout.html">Checkout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {# End Section Search et Cart #}
+
+    {# Begin Section Slider #}
+    <div class="slider__container slider--one bg__cat--3">
+        <div class="slide__container slider__activation__wrap owl-carousel">
+            <!-- Start Slide 1 -->
+            <div class="single__slide animation__style01 slider__fixed--height">
+                <div class="container">
+                    <div class="row align-items__center">
+                        <div class="col-md-7 col-sm-7 col-xs-12 col-lg-6">
+                            <div class="slide">
+                                <div class="slider__inner">
+                                    <h2>Collection Homme 2020</h2>
+                                    <h1>MBM Shop</h1>
+                                    <div class="cr__btn">
+                                        <a href="{{ path('login') }}">Connection</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-5 col-xs-12 col-md-5">
+                            <div class="slide__thumb">
+                                <img src="images/mbm/sliders/magasin1.jpg" alt="slider images">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Slide 1 -->
+            <!-- Start Slide 2 -->
+            <div class="single__slide animation__style01 slider__fixed--height">
+                <div class="container">
+                    <div class="row align-items__center">
+                        <div class="col-md-7 col-sm-7 col-xs-12 col-lg-6">
+                            <div class="slide">
+                                <div class="slider__inner">
+                                    <h2>Collection Homme 2020</h2>
+                                    <h1>MBM Shop</h1>
+                                    <div class="cr__btn">
+                                        <a href="cart.html">Connection</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-5 col-xs-12 col-md-5">
+                            <div class="slide__thumb">
+                                <img src="images/mbm/sliders/magasin2.jpg" alt="slider images">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Slide 2 -->
+        </div>
+    </div>
+    {# End Section Slider #}
+
+    {# Begin Section Concept #}
+    <section class="htc__category__area ptb--100" id="concept">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="section__title--2 text-center">
+                        <h2 class="title__line">Concept</h2>
+                        <p>Petite explication de notre concept</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
+                    <div class="category">
+                        <div class="fr__product__inner">
+                            <img src="images/mbm/concept/livraison.png" alt="product images">
+                            <h4><a href="#">Je m'inscris et réponds au quizz</a></h4>
+                            <p>Présentez-vous à travers vos préférences, votre style, votre morphologie.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
+                    <div class="category">
+                        <div class="fr__product__inner">
+                            <img src="images/mbm/concept/engagement.png" alt="product images">
+                            <h4><a href="#">J'accède à une sélection personnalisée</a></h4>
+                            <p>Une liste d'articles, correspondant au plus prés à votre profil, vous est présentée.</p>
+                        </div>
+                    </div>
+                 </div>
+                <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
+                    <div class="category">
+                        <div class="fr__product__inner">
+                            <img src="images/mbm/concept/chat.png" alt="product images">
+                            <h4><a href="#">Je choisis des articles</a></h4>
+                            <p>Vous avez l'opportunité de choisir des artilces parmi un grand nombre.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
+                    <div class="category">
+                        <div class="fr__product__inner">
+                            <img src="images/mbm/concept/cb.png" alt="product images">
+                            <h4><a href="product-details.html">Je valide ma commande</a></h4>
+                            <p>Vous pouvez finaliser votre commande ou conserver les choix exprimés.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row__concept">
+                  <div class="col-md-6 col-lg-6 col-sm-7 col-xs-12 concept__wrap__img">
+                   <img src="./images/mbm/concept/shop-1.jpg" alt="shopping">  
+                  </div>
+                  <div class="col-md-6 col-lg-6 col-sm-5 col-xs-12 concept__wrap__txt">
+                      <div class="wrap__concept__wrap__txt">
+                          <div class="concept__txt">
+                              <h3>Sélection 100% personnalisée</h3>
+                              <p>Votre styliste compose vos looks en fonction de vos goûts, votre morphologie et vos besoins.</p>
+                          </div> 
+                          <div class="concept__txt">
+                              <h3>+ de 15 marques partenaires</h3>
+                              <p>Nous sélectionnons nos marques d'abord pour la qualité de leurs pièces, et pour les engagements éco-responsables.</p>
+                          </div>    
+                          <div class="concept__txt">
+                              <h3>Livraison et retour gratuit</h3>
+                              <p>Faites vous livrer où vous le souhaitez : chez vous, à votre bureau ou en point relais. Le kit de retour est inclus.</p>
+                          </div> 
+                      </div>
+                  </div>
+                  </div>
+                </div>
+        </div>
+    </section>
+    {# End Section Concept #}
+
+    {# Begin Section BLue #}
+    <section class="htc__good__sale bg__cat--3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                    <div class="fr__prize__inner">
+                        <h2>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..</h2>
+                        <h3>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..</h3>
+                        <a class="fr__btn" href="#">Voir plus</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                    <div class="prize__inner">
+                        <div class="prize__thumb">
+                            <img src="images/banner/big-img/1.png" alt="banner images">
+                        </div>
+                        <div class="banner__info">
+                            <div class="pointer__tooltip pointer--3 align-left">
+                                <div class="tooltip__box">
+                                    <h4>Tooltip Left</h4>
+                                    <p>Lorem ipsum pisaci volupt atem accusa saes ntisdumtiu loperm asaerks.</p>
+                                </div>
+                            </div>
+                            <div class="pointer__tooltip pointer--4 align-top">
+                                <div class="tooltip__box">
+                                    <h4>Tooltip Top</h4>
+                                    <p>Lorem ipsum pisaci volupt atem accusa saes ntisdumtiu loperm asaerks.</p>
+                                </div>
+                            </div>
+                            <div class="pointer__tooltip pointer--5 align-bottom">
+                                <div class="tooltip__box">
+                                    <h4>Tooltip Bottom</h4>
+                                    <p>Lorem ipsum pisaci volupt atem accusa saes ntisdumtiu loperm asaerks.</p>
+                                </div>
+                            </div>
+                            <div class="pointer__tooltip pointer--6 align-top">
+                                <div class="tooltip__box">
+                                    <h4>Tooltip Bottom</h4>
+                                    <p>Lorem ipsum pisaci volupt atem accusa saes ntisdumtiu loperm asaerks.</p>
+                                </div>
+                            </div>
+                            <div class="pointer__tooltip pointer--7 align-top">
+                                <div class="tooltip__box">
+                                    <h4>Tooltip Bottom</h4>
+                                    <p>Lorem ipsum pisaci volupt atem accusa saes ntisdumtiu loperm asaerks.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {# End Section BLue #}
+
+    {# Begin Section Style #}
+    <section class="top__rated__area bg__white pt--100 pb--110">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section__title--2 text-center">
+                        <h2 class="title__line">Looks</h2>
+                        <p>Nos différentes catégories vestimentaires</p>
+                    </div>
+                </div>
+            </div>
+            {# <div class="row mt--20">
+                <!-- Start Single Product -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="htc__best__product">
+                        <div class="htc__best__pro__thumb">
+                            <a href="product-details.html">
+                                <img src="images/product-2/sm-img-2/1.jpg" alt="small product">
+                            </a>
+                        </div>
+                        <div class="htc__best__product__details">
+                            <h2><a href="product-details.html">dummy Product title</a></h2>
+                            <ul class="rating">
+                                <li><i class="icon-star icons"></i></li>
+                                <li><i class="icon-star icons"></i></li>
+                                <li><i class="icon-star icons"></i></li>
+                                <li class="old"><i class="icon-star icons"></i></li>
+                                <li class="old"><i class="icon-star icons"></i></li>
+                            </ul>
+                            <ul  class="top__pro__prize">
+                                <li class="old__prize">$82.5</li>
+                                <li>$75.2</li>
+                            </ul>
+                            <div class="best__product__action">
+                                <ul class="product__action--dft">
+                                    <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
+                                    <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
+                                    <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Product -->
+                <!-- Start Single Product -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="htc__best__product">
+                        <div class="htc__best__pro__thumb">
+                            <a href="product-details.html">
+                                <img src="images/product-2/sm-img-2/2.jpg" alt="small product">
+                            </a>
+                        </div>
+                        <div class="htc__best__product__details">
+                            <h2><a href="product-details.html">dummy Product title</a></h2>
+                            <ul class="rating">
+                                <li><i class="icon-star icons"></i></li>
+                                <li><i class="icon-star icons"></i></li>
+                                <li><i class="icon-star icons"></i></li>
+                                <li class="old"><i class="icon-star icons"></i></li>
+                                <li class="old"><i class="icon-star icons"></i></li>
+                            </ul>
+                            <ul  class="top__pro__prize">
+                                <li class="old__prize">$82.5</li>
+                                <li>$75.2</li>
+                            </ul>
+                            <div class="best__product__action">
+                                <ul class="product__action--dft">
+                                    <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
+                                    <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
+                                    <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Product -->
+                <!-- Start Single Product -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="htc__best__product">
+                        <div class="htc__best__pro__thumb">
+                            <a href="product-details.html">
+                                <img src="images/product-2/sm-img-2/3.jpg" alt="small product">
+                            </a>
+                        </div>
+                        <div class="htc__best__product__details">
+                            <h2><a href="product-details.html">dummy Product title</a></h2>
+                            <ul class="rating">
+                                <li><i class="icon-star icons"></i></li>
+                                <li><i class="icon-star icons"></i></li>
+                                <li><i class="icon-star icons"></i></li>
+                                <li class="old"><i class="icon-star icons"></i></li>
+                                <li class="old"><i class="icon-star icons"></i></li>
+                            </ul>
+                            <ul  class="top__pro__prize">
+                                <li class="old__prize">$82.5</li>
+                                <li>$75.2</li>
+                            </ul>
+                            <div class="best__product__action">
+                                <ul class="product__action--dft">
+                                    <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
+                                    <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
+                                    <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Product -->
+            </div> #}
+            <div class="row">
+              <div class="wrapper__looks col-xs-12">
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                    <div class="fr__prize__inner">
+                        <h2>Chic</h2>
+                        <h3>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</h3>
+                        <a class="fr__btn" href="#">Voir plus</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                    <div class="prize__inner">
+                        <img src="images/mbm/looks/Chic.jpg" alt="banner images">
+                    </div>
+                </div>
+              </div>
+              <div class="wrapper__looks col-xs-12">
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                    <div class="prize__inner">
+                        <img src="images/mbm/looks/Casual.jpg" alt="banner images">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                    <div class="fr__prize__inner">
+                        <h2>Casual</h2>
+                        <h3>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</h3>
+                        <a class="fr__btn" href="#">Voir plus</a>
+                    </div>
+                </div>
+              </div>
+              <div class="wrapper__looks col-xs-12">
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                    <div class="fr__prize__inner">
+                        <h2>Décontracté</h2>
+                        <h3>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</h3>
+                        <a class="fr__btn" href="#">Voir plus</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                    <div class="prize__inner">
+                        <img src="images/mbm/looks/Chic.jpg" alt="banner images">
+                    </div>
+                </div>
+              </div>
+              <div class="wrapper__looks col-xs-12">
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                    <div class="prize__inner">
+                        <img src="images/mbm/looks/Street.jpg" alt="banner images">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                    <div class="fr__prize__inner">
+                        <h2>Street</h2>
+                        <h3>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</h3>
+                        <a class="fr__btn" href="#">Voir plus</a>
+                    </div>
+                </div>
+              </div>
+               <div class="wrapper__looks col-xs-12">
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                    <div class="fr__prize__inner">
+                        <h2>Soirée</h2>
+                        <h3>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</h3>
+                        <a class="fr__btn" href="#">Voir plus</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                    <div class="prize__inner">
+                        <img src="images/mbm/looks/Soiree.jpg" alt="banner images">
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    {# End Section Style #}
+
+    {# Begin Section Marques #}
+    {# <div class="htc__brand__area bg__cat--4" style="padding-top: 100px"> #}
+    <div class="htc__brand__area bg__cat--4">
+        <div class="container">
+            {# <div class="row">
+                <div class="col-xs-12">
+                    <div class="section__title--2 text-center">
+                        <h2 class="title__line">Marques Partenaires</h2>
+                        <p>LoremLoremLoremLoremLoremLoremLoremLoremLorem</p>
+                    </div>
+                </div>
+            </div> #}
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="ht__brand__inner">
+                        <ul class="brand__list owl-carousel clearfix">
+                            <li><a href="#"><img src="images/mbm/marques/celio.png" alt="brand images"></a></li>
+                            <li><a href="#"><img src="images/mbm/marques/adid.png" alt="brand images"></a></li>
+                            <li><a href="#"><img src="images/mbm/marques/devred.png" alt="brand images"></a></li>
+                            <li><a href="#"><img src="images/mbm/marques/hm.png" alt="brand images"></a></li>
+                            <li><a href="#"><img src="images/mbm/marques/levis.png" alt="brand images"></a></li>
+                            <li><a href="#"><img src="images/mbm/marques/armand_thierry.png" alt="brand images"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# End Section Marques #}
+
+    {# Begin Section Blog #}
+    <section class="htc__blog__area bg__white ptb--100" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="section__title--2 text-center">
+                        <h2 class="title__line">Blog</h2>
+                        <p>Actualités relatives à nos partenaires</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="ht__blog__wrap clearfix">
+                    <!-- Start Single Blog -->
+                    <div class="col-md-6 col-lg-4 col-sm-6 col-xs-12">
+                        <div class="blog">
+                            <div class="blog__thumb">
+                                <a href="#">
+                                    <img src="images/mbm/blog/Esprit.jpg" alt="blog images">
+                                </a>
+                            </div>
+                            <div class="blog__details">
+                                <div class="bl__date">
+                                    <span>25 Février 2020</span>
+                                </div>
+                                <h2><a href="#">Esprit réduit la voilure et ses pertes</a></h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <div class="blog__btn">
+                                    <a href="#">Plus d'infos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Blog -->
+                    <!-- Start Single Blog -->
+                    <div class="col-md-6 col-lg-4 col-sm-6 col-xs-12">
+                        <div class="blog">
+                            <div class="blog__thumb">
+                                <a href="#">
+                                    <img src="images/mbm/blog/Zalando.jpg" alt="blog images">
+                                </a>
+                            </div>
+                            <div class="blog__details">
+                                <div class="bl__date">
+                                    <span>26 Février 2020</span>
+                                </div>
+                                <h2><a href="#">Zalando accélère sa croissance hors d'Allemagne en 2019</a></h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <div class="blog__btn">
+                                    <a href="#">Plus d'infos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Blog -->
+                    <!-- Start Single Blog -->
+                    <div class="col-md-6 col-lg-4 col-sm-6 col-xs-12">
+                        <div class="blog">
+                            <div class="blog__thumb">
+                                <a href="#">
+                                    <img src="images/mbm/blog/Abloh.jpg" alt="blog images">
+                                </a>
+                            </div>
+                            <div class="blog__details">
+                                <div class="bl__date">
+                                    <span>27 Février 2020</span>
+                                </div>
+                                <h2><a href="#">Avec Off-White, Virgil Abloh s'embourgeoise</a></h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <div class="blog__btn">
+                                    <a href="#">Plus d'infos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Blog -->
+                </div>
+            </div>
+        </div>
+    </section>
+    {# End Section Blog #}
+
+{% endblock %}
