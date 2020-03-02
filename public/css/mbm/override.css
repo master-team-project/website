@@ -11,3 +11,14 @@ a#scrollUp {
 
 
 /* End Override */
+
+/* CONTACT PAGE  */
+
+.address__icon {
+    background: #564D85 none repeat scroll 0 0;
+    height: 120px;
+    line-height: 144px;
+    text-align: center;
+    width: 110px;
+}
+/* End Contact */ 
