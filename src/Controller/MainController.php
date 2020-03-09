@@ -56,4 +56,13 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
+     /**
+     * @Route("/list-products", name="list-products")
+     */
+    public function listProducts()
+    {
+        return $this->render('shop/list-products.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
 }
