@@ -101,5 +101,14 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
+      /**
+     * @Route("/list-products-chemises", name="list-products-chemises")
+     */
+    public function listProductsChemises()
+    {
+        return $this->render('shop/list-products-chemises.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
     
 }
