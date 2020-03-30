@@ -66,4 +66,64 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
+
+    /**
+     * @Route("/products", name="products")
+     */
+    public function products()
+    {
+        return $this->render('shop/products.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+
+    /**
+     * @Route("/product:id", name="product-details")
+     */
+    public function findProductById()
+    {
+        return $this->render('shop/product-details.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+
+    /**
+     * @Route("/cart", name="cart")
+     */
+    public function cart()
+    {
+        return $this->render('shop/cart.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+
+    /**
+     * @Route("/order", name="order")
+     */
+    public function order()
+    {
+        return $this->render('shop/order.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+
+    /**
+     * @Route("/profil", name="profil")
+     */
+    public function profil()
+    {
+        return $this->render('shop/profil.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+
+     /**
+     * @Route("/blog", name="blog")
+     */
+    public function blog()
+    {
+        return $this->render('shop/blog.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
 }

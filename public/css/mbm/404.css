@@ -1,0 +1,26 @@
+.error-404 {
+    font-size: 200px;
+    color: rgba(212, 41, 41, 0.877);
+    /* border: 1px solid red; */
+    padding: 50px auto;
+    text-align: center;
+    margin: 50px 0;
+}
+
+p {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.opps {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+a.btn-404 {
+    background: #2B2743;
+    color: #FFFFFF;
+    margin: 50px auto;
+    display: block;
+    width: 250px;
+}
