@@ -164,5 +164,14 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
+      /**
+     * @Route("/list-products-decontracte", name="list-products-decontracte")
+     */
+    public function listProductsDecontracte()
+    {
+        return $this->render('shop/list-products-decontracte.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
     
 }
