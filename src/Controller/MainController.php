@@ -182,5 +182,14 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
+     /**
+     * @Route("/panier", name="panier")
+     */
+    public function panierShop()
+    {
+        return $this->render('shop/panier.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
     
 }
