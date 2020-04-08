@@ -173,5 +173,14 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
+      /**
+     * @Route("/detail-product", name="detail-product")
+     */
+    public function detailProduct()
+    {
+        return $this->render('shop/detail-product.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
     
 }
