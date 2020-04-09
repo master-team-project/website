@@ -191,5 +191,13 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
-    
+     /**
+     * @Route("/payement", name="payement")
+     */
+    public function payement()
+    {
+        return $this->render('shop/payement.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
 }
