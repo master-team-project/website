@@ -46,6 +46,43 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
+      /**
+     * @Route("/register2", name="register2")
+     */
+    public function signup2()
+    {
+        return $this->render('auth/register2.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+      /**
+     * @Route("/register3", name="register3")
+     */
+    public function signup3()
+    {
+        return $this->render('auth/register3.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+    /**
+     * @Route("/register4", name="register4")
+     */
+    public function signup4()
+    {
+        return $this->render('auth/register4.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+      /**
+     * @Route("/register5", name="register5")
+     */
+    public function signup5()
+    {
+        return $this->render('auth/register5.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+    
 
     /**
      * @Route("/lost-password", name="lost-password")
@@ -197,6 +234,15 @@ class MainController extends AbstractController
     public function payement()
     {
         return $this->render('shop/payement.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+      /**
+     * @Route("/profile", name="profile")
+     */
+    public function profile()
+    {
+        return $this->render('shop/profile.html.twig', [
             'controller_name' => 'MainController',
         ]);
     }

@@ -1,0 +1,196 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ parent() }} MBM - Register Page {% endblock %}
+
+{% block header '' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="css/mbm/register.css">
+    <link rel="stylesheet" href="css/mbm/home.css">
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+{% endblock %}
+
+{% block content %}
+
+    <div class="wrapper-content">
+        <div class="wrapper-content__container">
+            <div class="wrapper-content__container__left-side" style="background-image: url('images/bank/register4.jpg');width:56%;">
+            
+            </div>
+                <div class="wrapper-content__container__right-side" style="width:44%;">
+                    <form class="login-form validate-form">
+                        
+                        <span class="login-form__title">
+                            Inscription
+                        </span>
+
+                        <div class="login-form__timeline">
+                            <div class="login-form__timeline__span__wrap">
+                                <span class="login-form__timeline__span">1</span>
+                                <span class="login-form__timeline__span_text">Infos personnelles</span>
+                            </div>
+                            <hr class="login-form__timeline__hr">
+                            <div class="login-form__timeline__span__wrap">
+                                <span class="login-form__timeline__span active">2</span>
+                                <span class="login-form__timeline__span_text">Goûts</span>
+                            </div>
+                            <hr class="login-form__timeline__hr">
+                            <div class="login-form__timeline__span__wrap">
+                                <span class="login-form__timeline__span">3</span>
+                                <span class="login-form__timeline__span_text">Fin</span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-md-12">
+                            <h3>Avec quelle coupe sentez-vous le plus à l'aise ? </h3>
+                        </div>
+                        
+                        <h5>Haut</h5>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">Près du corps</label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">Droit</label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">Ample</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h5>Bas</h5>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">Près du corps</label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">Droit</label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">Ample</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h5>Quelle taille portez-vous habituellement ? </h5>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h6>T-shirt, Polo, Sweat</h6>
+                                    <div class="form-group col-md-4">
+                                        <select id="inputState" class="form-control" style="height:30px;">
+                                            <option>Choisir la taille</option>
+                                            <option>S</option>
+                                            <option>M</option>
+                                            <option>L</option>
+                                            <option>XL</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                 <div class="col-md-12">
+                                    <h6>Jeans, Pantalon, Short</h6>
+                                    <div class="form-group col-md-4">
+                                        <select id="inputState" class="form-control" style="height:30px;">
+                                            <option>Choisir la taille</option>
+                                            <option>S</option>
+                                            <option>M</option>
+                                            <option>L</option>
+                                            <option>XL</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h5>Quelle est votre taille ?</h5>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">Entre 155 - 165 cm</label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">Entre 166 - 175 cm</label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">Plus de 176 cm</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="container-login-form-btn">
+                        <div class="wrap-login-form-btn">
+                            <div class="login-form-bgbtn">
+                            </div>
+                            <button class="login-form-btn">
+                                <a href="{{ path('register5') }}">Terminer</a>
+                            </button>
+                        
+                        </div>
+                    
+                    </div>
+                            
+                            
+                                
+                            
+                      
+                        
+                        
+                    </form> 
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+
+                            
+                    
+                </div>
+        </div>
+    </div>
+       
+{% endblock %}
+
+{% block footer '' %}

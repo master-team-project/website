@@ -1,0 +1,114 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ parent() }} MBM - Register Page {% endblock %}
+
+{% block header '' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="css/mbm/register.css">
+    <link rel="stylesheet" href="css/mbm/home.css">
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+{% endblock %}
+
+{% block content %}
+
+    <div class="wrapper-content">
+        <div class="wrapper-content__container">
+            <div class="wrapper-content__container__left-side" style="background-image: url('images/bank/register2.jpg');width:56%;">
+            </div>
+            <div class="wrapper-content__container__right-side" style="width:44%;">
+                <form class="login-form validate-form">
+                    
+                    <span class="login-form__title">
+                        Inscription
+                    </span>
+
+                    <div class="login-form__timeline">
+                        <div class="login-form__timeline__span__wrap">
+                            <span class="login-form__timeline__span">1</span>
+                            <span class="login-form__timeline__span_text">Infos personnelles</span>
+                        </div>
+                        <hr class="login-form__timeline__hr">
+                        <div class="login-form__timeline__span__wrap">
+                            <span class="login-form__timeline__span active">2</span>
+                            <span class="login-form__timeline__span_text">Goûts</span>
+                        </div>
+                        <hr class="login-form__timeline__hr">
+                        <div class="login-form__timeline__span__wrap">
+                            <span class="login-form__timeline__span">3</span>
+                            <span class="login-form__timeline__span_text">Fin</span>
+                        </div>
+                    </div>
+
+                    
+					<div class="col-md-12">
+						<h3>Comment vous habillez vous pendant votre temps libre ?</h3>
+					</div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card mb-6">
+                                    <img class="card-img-top" src="https://images.pexels.com/photos/2059696/pexels-photo-2059696.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></img>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" style="margin-left:125px;">
+                                </div>
+                                 <div class="card mb-6">
+                                    <img class="card-img-top" src="https://images.pexels.com/photos/2059696/pexels-photo-2059696.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></img>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" style="margin-left:125px;">
+                                </div>
+                                
+                            </div>
+                              
+                        </div>   
+                    </div>
+                    <div class="col-md-6">
+                                <div class="card mb-6">
+                                    <img class="card-img-top" src="https://images.pexels.com/photos/2059696/pexels-photo-2059696.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></img>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" style="margin-left:125px;">
+                                </div>
+                                 <div class="card mb-6">
+                                    <img class="card-img-top" src="https://images.pexels.com/photos/2059696/pexels-photo-2059696.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></img>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" style="margin-left:125px;">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-login-form-btn">
+                        <div class="wrap-login-form-btn">
+                            <div class="login-form-bgbtn"></div>
+                            <button class="login-form-btn">
+                                <a href="{{ path('register3') }}">Suivant</a>
+                            </button>
+                        </div>
+                    </div>
+                </form> 
+                
+                
+			</div>
+            
+                   
+                  
+                  
+                  
+
+                </form>
+            </div>
+        </div>
+    </div>
+       
+{% endblock %}
+
+{% block footer '' %}
