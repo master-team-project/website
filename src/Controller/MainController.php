@@ -255,4 +255,13 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
+          /**
+     * @Route("/blog", name="blog")
+     */
+    public function blogPage()
+    {
+        return $this->render('blog/blog.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
 }
