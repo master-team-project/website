@@ -282,4 +282,13 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
+       /**
+     * @Route("/list-products-adidas", name="list-products-adidas")
+     */
+    public function listProductsAdidas()
+    {
+        return $this->render('shop/list-products-adidas.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
 }
