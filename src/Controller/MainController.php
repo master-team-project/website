@@ -264,4 +264,13 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
+             /**
+     * @Route("/blog-detail", name="blog-detail")
+     */
+    public function blogDetail()
+    {
+        return $this->render('blog/blog-detail.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
 }
