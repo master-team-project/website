@@ -309,4 +309,14 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
+    /**
+     * @Route("/list-products-levis", name="list-products-levis")
+     */
+    public function listProductsLevis()
+    {
+        return $this->render('shop/list-products-levis.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+    
 }
