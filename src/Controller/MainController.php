@@ -291,4 +291,13 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
+         /**
+     * @Route("/list-products-devred", name="list-products-devred")
+     */
+    public function listProductsDevred()
+    {
+        return $this->render('shop/list-products-devred.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
 }
