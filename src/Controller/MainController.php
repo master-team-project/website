@@ -264,12 +264,21 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
-             /**
+     /**
      * @Route("/blog-detail", name="blog-detail")
      */
     public function blogDetail()
     {
         return $this->render('blog/blog-detail.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+     /**
+     * @Route("/list-products-celio", name="list-products-celio")
+     */
+    public function listProductsCelio()
+    {
+        return $this->render('shop/list-products-celio.html.twig', [
             'controller_name' => 'MainController',
         ]);
     }
