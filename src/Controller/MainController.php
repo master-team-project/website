@@ -327,5 +327,50 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
+    /**
+     * @Route("/landing-regie", name="landing-regie")
+     */
+    public function landingRegie()
+    {
+        return $this->render('regie/landing-regie.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+    /**
+     * @Route("/regie-register", name="regie-register")
+     */
+    public function regieRegister()
+    {
+        return $this->render('regie/regie-register.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+     /**
+     * @Route("/regie-register2", name="regie-register2")
+     */
+    public function regieRegister2()
+    {
+        return $this->render('regie/regie-register2.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+    /**
+     * @Route("/regie-register3", name="regie-register3")
+     */
+    public function regieRegister3()
+    {
+        return $this->render('regie/regie-register3.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+     /**
+     * @Route("/regie-login", name="regie-login")
+     */
+    public function regieLogin()
+    {
+        return $this->render('regie/regie-login.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
     
 }
