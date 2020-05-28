@@ -1,1 +1,22 @@
-Our new template error
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ parent() }} MBM - 500 Error Page {% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="css/mbm/404.css">
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <h1 class="error-404">
+      500
+    </h1>
+      <p class="opps">OPPS! Internal Server Error</p>
+      <p class="sentence">
+        Le serveur a rencontré une erreur interne qui l’a empêché de satisfaire la requête.
+      </p>
+
+      <a class="btn btn-default btn-404 btn-lg" href="{{ path('home') }}" role="button">Back to home page</a>
+  </div>
+{% endblock %}

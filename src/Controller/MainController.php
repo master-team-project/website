@@ -78,12 +78,13 @@ class MainController extends AbstractController
     }
 
     /**
-     * @Route("/product:id", name="product-details")
+     * @Route("/product/:id", name="product-details")
      */
-    public function findProductById()
+    public function productById($id)
     {
         return $this->render('shop/product-details.html.twig', [
             'controller_name' => 'MainController',
+            'id' => $id
         ]);
     }
 
@@ -112,18 +113,38 @@ class MainController extends AbstractController
      */
     public function profil()
     {
-        return $this->render('shop/profil.html.twig', [
+        // return $this->render('shop/profil.html.twig', [
+        return $this->render('profil/profil.html.twig', [
             'controller_name' => 'MainController',
         ]);
     }
 
-     /**
+    /**
      * @Route("/blog", name="blog")
      */
     public function blog()
     {
-        return $this->render('shop/blog.html.twig', [
+        return $this->render('blog/blog-list.html.twig', [
             'controller_name' => 'MainController',
+        ]);
+    }
+
+    /**
+     * @Route("/blog/{id}", name="blog-details")
+     */
+    public function blogDetails($id)
+    {
+        $pages = [
+            'news_1' => [
+                'title' => "Levi's et New Balance signent une paire de sneakers pour le printemps",
+                'content' => "(Relaxnews) - Les deux marques américaines unissent leur force pour concevoir une paire de sneakers pour la saison printemps-été 2020. A la clé, un modèle inspiré de la NB 1300, qui célèbre cette année son 35e anniversaire. Pour cette collaboration, Levi's et New Balance rendent hommage à leurs univers respectifs que ce soit à travers le design, les matières choisies, ou les divers éléments mis en valeur. Entièrement conçue aux États-Unis, la paire de sneakers se décline dans une version premium en suède, cuir et toile.Plus en détails, le modèle proposé en édition limitée se distingue par l'emblématique écusson en suède de Levi's, et les toiles White Oak XX52 récupérées par la célèbre marque américaine. Des baskets à la fois vintage et avant-gardistes en somme qui raviront les nombreux amateurs et collectionneurs de sneakers. Le modèle est disponible chez The Next Door à Paris ou sur les sites des deux marques. Son prix : 220 euros.",
+                'urlImg' => "https://medias.fashionnetwork.com/image/upload/v1/medias/d095ad9cd1cc6ced60f9c71493e296513114813.jpg"
+            ]
+        ];
+
+        return $this->render('blog/blog-details.html.twig', [
+            'controller_name' => 'MainController',
+            'page' => $pages['news_1']
         ]);
     }
 }

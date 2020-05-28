@@ -16,21 +16,32 @@
         {% block stylesheets %}
             <!-- All css files are included here. -->
             <!-- Bootstrap fremwork main css -->
-            <link rel="stylesheet" href="css/bootstrap.min.css">
+            <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
             <!-- Owl Carousel min css -->
-            <link rel="stylesheet" href="css/owl.carousel.min.css">
-            <link rel="stylesheet" href="css/owl.theme.default.min.css">
+            <!-- <link rel="stylesheet" href="css/owl.carousel.min.css"> -->
+            <!-- <link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
             <!-- This core.css file contents all plugings css file. -->
-            <link rel="stylesheet" href="css/core.css">
+            <!-- <link rel="stylesheet" href="css/core.css"> -->
             <!-- Theme shortcodes/elements style -->
-            <link rel="stylesheet" href="css/shortcode/shortcodes.css">
+            <!-- <link rel="stylesheet" href="css/shortcode/shortcodes.css"> -->
             <!-- Theme main style -->
-            <link rel="stylesheet" href="style.css">
+            <!-- <link rel="stylesheet" href="style.css"> -->
             <!-- Responsive css -->
-            <link rel="stylesheet" href="css/responsive.css">
+            <!-- <link rel="stylesheet" href="css/responsive.css"> -->
             <!-- User style -->
-            <link rel="stylesheet" href="css/custom.css">
-            <link rel="stylesheet" href="css/mbm/override.css">
+            <!-- <link rel="stylesheet" href="css/custom.css"> -->
+            <!-- <link rel="stylesheet" href="css/mbm/override.css"> -->
+
+            <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+
+            <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/core.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/shortcode/shortcodes.css') }}">
+            <link rel="stylesheet" href="{{ asset('style.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/mbm/override.css') }}">
         {% endblock %}
 
     </head>
@@ -48,7 +59,7 @@
                                     <div class="menumenu__container clearfix">
                                         <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5"> 
                                             <div class="logo">
-                                                <a href="{{ path('home') }}"><img src="images/mbm/logo/MBM-logo-white.png" alt="logo images"></a>
+                                                <a href="{{ path('home') }}"><img src="{{ asset('images/mbm/logo/MBM-logo-white.png') }}" alt="logo images"></a>
                                             </div>
                                         </div>
                                         <div class="col-md-7 col-lg-8 col-sm-5 col-xs-3">
@@ -234,19 +245,19 @@
 
         {% block javascripts %}
             <!-- Modernizr JS -->
-            <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+            <script src="{{ asset('js/vendor/modernizr-3.5.0.min.js') }}"></script>
             <!-- jquery latest version -->
-            <script src="js/vendor/jquery-3.2.1.min.js"></script>
+            <script src="{{ asset('js/vendor/jquery-3.2.1.min.js') }}"></script>
             <!-- Bootstrap framework js -->
-            <script src="js/bootstrap.min.js"></script>
+            <script src="{{ asset('js/bootstrap.min.js') }}"></script>
             <!-- All js plugins included in this file. -->
-            <script src="js/plugins.js"></script>
-            <script src="js/slick.min.js"></script>
-            <script src="js/owl.carousel.min.js"></script>
+            <script src="{{ asset('js/plugins.js') }}"></script>
+            <script src="{{ asset('js/slick.min.js') }}"></script>
+            <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
             <!-- Waypoints.min.js. -->
-            <script src="js/waypoints.min.js"></script>
+            <script src="{{ asset('js/waypoints.min.js') }}"></script>
             <!-- Main js file that contents all jQuery plugins activation. -->
-            <script src="js/main.js"></script>
+            <script src="{{ asset('js/main.js') }}"></script>
         {% endblock %}
 
     </body>

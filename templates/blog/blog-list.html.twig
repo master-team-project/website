@@ -1,0 +1,341 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ parent() }} MBM - Blog Page {% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <!-- <link rel="stylesheet" href="css/mbm/blog.css"> -->
+{% endblock %}
+
+{% block content %}
+      <!-- Body main wrapper start -->
+    <div class="wrapper">
+        <!-- Start Header Style -->
+        <!-- End Header Area -->
+
+        <div class="body__overlay"></div>
+        <!-- Start Offset Wrapper -->
+        <div class="offset__wrapper">
+            <!-- Start Search Popap -->
+            <div class="search__area">
+                <div class="container" >
+                    <div class="row" >
+                        <div class="col-md-12" >
+                            <div class="search__inner">
+                                <form action="#" method="get">
+                                    <input placeholder="Search here... " type="text">
+                                    <button type="submit"></button>
+                                </form>
+                                <div class="search__close__btn">
+                                    <span class="search__close__btn_icon"><i class="zmdi zmdi-close"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Search Popap -->
+            <!-- Start Cart Panel -->
+            <!-- <div class="shopping__cart">
+                <div class="shopping__cart__inner">
+                    <div class="offsetmenu__close__btn">
+                        <a href="#"><i class="zmdi zmdi-close"></i></a>
+                    </div>
+                    <div class="shp__cart__wrap">
+                        <div class="shp__single__product">
+                            <div class="shp__pro__thumb">
+                                <a href="#">
+                                    <img src="images/product-2/sm-smg/1.jpg" alt="product images">
+                                </a>
+                            </div>
+                            <div class="shp__pro__details">
+                                <h2><a href="product-details.html">BO&Play Wireless Speaker</a></h2>
+                                <span class="quantity">QTY: 1</span>
+                                <span class="shp__price">$105.00</span>
+                            </div>
+                            <div class="remove__btn">
+                                <a href="#" title="Remove this item"><i class="zmdi zmdi-close"></i></a>
+                            </div>
+                        </div>
+                        <div class="shp__single__product">
+                            <div class="shp__pro__thumb">
+                                <a href="#">
+                                    <img src="images/product-2/sm-smg/2.jpg" alt="product images">
+                                </a>
+                            </div>
+                            <div class="shp__pro__details">
+                                <h2><a href="product-details.html">Brone Candle</a></h2>
+                                <span class="quantity">QTY: 1</span>
+                                <span class="shp__price">$25.00</span>
+                            </div>
+                            <div class="remove__btn">
+                                <a href="#" title="Remove this item"><i class="zmdi zmdi-close"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="shoping__total">
+                        <li class="subtotal">Subtotal:</li>
+                        <li class="total__price">$130.00</li>
+                    </ul>
+                    <ul class="shopping__btn">
+                        <li><a href="cart.html">View Cart</a></li>
+                        <li class="shp__checkout"><a href="checkout.html">Checkout</a></li>
+                    </ul>
+                </div>
+            </div> -->
+            <!-- End Cart Panel -->
+        </div>
+        <!-- End Offset Wrapper -->
+        <!-- Start Bradcaump area -->
+        <div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSC0-A_CL8zhbCyraw--gK0CBx7GEE7v2v5HTzXDow6vLoHT8Ua&usqp=CAU) no-repeat scroll center center / cover ;">
+            <div class="ht__bradcaump__wrap">
+                <!-- <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="bradcaump__inner">
+                                <nav class="bradcaump-inner">
+                                  <a class="breadcrumb-item" href="index.html">Home</a>
+                                  <span class="brd-separetor"><i class="zmdi zmdi-chevron-right"></i></span>
+                                  <span class="breadcrumb-item active">Blog</span>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <!-- End Bradcaump area -->
+        <!-- Start Blog Area -->
+        <section class="htc__blog__area bg__white ptb--100">
+            <div class="container">
+                <div class="row">
+                    <div class="ht__blog__wrap blog--page clearfix">
+                        <!-- Start Single Blog -->
+                        <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12">
+                            <div class="blog">
+                                <div class="blog__thumb">
+                                    <a href="{{ url('blog-details', {'id':1}) }}">
+                                        <img src="https://medias.fashionnetwork.com/image/upload/c_fill,f_auto,g_face,h_208,w_208/v1/medias/52bab0c2b67e72f99849779f1c712f1d3114815.jpg" alt="blog images">
+                                    </a>
+                                </div>
+                                <div class="blog__details">
+                                    <div class="bl__date">
+                                        <span>4 Avril 2020</span>
+                                    </div>
+                                    <h2><a href="{{ url('blog-details', {'id':1}) }}">Levi's et New Balance signent une paire de sneakers pour le printemps</a></h2>
+                                    <!-- <p></p>
+                                    <div class="blog__btn">
+                                        <a href="blog-details.html">Voir plus</a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Blog -->
+                        <!-- Start Single Blog -->
+                        <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12">
+                            <div class="blog">
+                                <div class="blog__thumb">
+                                    <a href="blog-details.html">
+                                        <img src="https://medias.fashionnetwork.com/image/upload/c_fill,f_auto,g_face,h_208,w_208/v1/medias/7c97beae19c72748e192cb4ab13d403f3121437.jpg" alt="blog images">
+                                    </a>
+                                </div>
+                                <div class="blog__details">
+                                    <div class="bl__date">
+                                        <span>4 Avril 2020</span>
+                                    </div>
+                                    <h2><a href="blog-details.html">Etudes enchaîne les collaborations surprises</a></h2>
+                                    <!-- <p></p>
+                                    <div class="blog__btn">
+                                        <a href="blog-details.html">Voir plus</a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Blog -->
+                        <!-- Start Single Blog -->
+                        <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12">
+                            <div class="blog">
+                                <div class="blog__thumb">
+                                    <a href="blog-details.html">
+                                        <img src="https://medias.fashionnetwork.com/image/upload/c_fill,f_auto,g_face,h_208,w_208/v1/medias/4976590a4ca5f9cae740ad93647249713103599.jpg" alt="blog images">
+                                    </a>
+                                </div>
+                                <div class="blog__details">
+                                    <div class="bl__date">
+                                        <span>4 Avril 2020</span>
+                                    </div>
+                                    <h2><a href="blog-details.html">Selon Muriel Pénicaud, 2,2 millions de salariés français en chômage partiel</a></h2>
+                                    <!-- <p></p>
+                                    <div class="blog__btn">
+                                        <a href="blog-details.html">Voir plus</a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Blog -->
+                        <!-- Start Single Blog -->
+                        <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12">
+                            <div class="blog">
+                                <div class="blog__thumb">
+                                    <a href="blog-details.html">
+                                        <img src="https://medias.fashionnetwork.com/image/upload/c_fill,f_auto,g_face,h_208,w_208/v1/medias/6d3279508a14451eb0c05ea662135fac3121508.jpg" alt="blog images">
+                                    </a>
+                                </div>
+                                <div class="blog__details">
+                                    <div class="bl__date">
+                                        <span>4 Avril 2020</span>
+                                    </div>
+                                    <h2><a href="blog-details.html">AMI apporte sa contribution à WHO et Hôpitaux de Paris</a></h2>
+                                    <!-- <p></p>
+                                    <div class="blog__btn">
+                                        <a href="blog-details.html">Voir plus</a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Blog -->
+                        <!-- Start Single Blog -->
+                        <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12">
+                            <div class="blog">
+                                <div class="blog__thumb">
+                                    <a href="blog-details.html">
+                                        <img src="https://medias.fashionnetwork.com/image/upload/c_fill,f_auto,g_face,h_208,w_208/v1/medias/05ba468c2ac673e8adace47e9b4011373121438.jpg" alt="blog images">
+                                    </a>
+                                </div>
+                                <div class="blog__details">
+                                    <div class="bl__date">
+                                        <span>4 Avril 2020</span>
+                                    </div>
+                                    <h2><a href="blog-details.html">Covid-19 : les autres "usines du monde" bientôt à l'arrêt ?</a></h2>
+                                    <!-- <p></p>
+                                    <div class="blog__btn">
+                                        <a href="blog-details.html">Voir plus</a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Blog -->
+                        <!-- Start Single Blog -->
+                        <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12">
+                            <div class="blog">
+                                <div class="blog__thumb">
+                                    <a href="blog-details.html">
+                                        <img src="https://medias.fashionnetwork.com/image/upload/c_fill,f_auto,g_face,h_208,w_208/v1/medias/ddc74f98f4949673931bcb3791c7645d3132363.jpg" alt="blog images">
+                                    </a>
+                                </div>
+                                <div class="blog__details">
+                                    <div class="bl__date">
+                                        <span>4 Avril 2020</span>
+                                    </div>
+                                    <h2><a href="blog-details.html">Aux Etats-Unis, la Chambre des Représentants valide le plan de soutien à l'économie</a></h2>
+                                    <!-- <p></p>
+                                    <div class="blog__btn">
+                                        <a href="blog-details.html">Voir plus</a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Blog -->
+                        <!-- Start Single Blog -->
+                        <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12">
+                            <div class="blog">
+                                <div class="blog__thumb">
+                                    <a href="blog-details.html">
+                                        <img src="https://medias.fashionnetwork.com/image/upload/c_fill,f_auto,g_face,h_208,w_208/v1/medias/cf38b812c93228555fa73d0e89374c473122461.jpg" alt="blog images">
+                                    </a>
+                                </div>
+                                <div class="blog__details">
+                                    <div class="bl__date">
+                                        <span>4 Avril 2020</span>
+                                    </div>
+                                    <h2><a href="blog-details.html">L'activité économique et la consommation des ménages chutent de 35 % en France</a></h2>
+                                    <!-- <p></p>
+                                    <div class="blog__btn">
+                                        <a href="blog-details.html">Voir plus</a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Blog -->
+                        <!-- Start Single Blog -->
+                        <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12">
+                            <div class="blog">
+                                <div class="blog__thumb">
+                                    <a href="blog-details.html">
+                                        <img src="https://medias.fashionnetwork.com/image/upload/c_fill,f_auto,g_face,h_208,w_208/v1/medias/84268ba4df24ee0e9bcf46406914f9df3124737.jpg" alt="blog images">
+                                    </a>
+                                </div>
+                                <div class="blog__details">
+                                    <div class="bl__date">
+                                        <span>4 Avril 2020</span>
+                                    </div>
+                                    <h2><a href="blog-details.html">Rallye confirme la mise en vente de Go Sport</a></h2>
+                                    <!-- <p></p>
+                                    <div class="blog__btn">
+                                        <a href="blog-details.html">Voir plus</a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Blog -->
+                        <!-- Start Single Blog -->
+                        <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12">
+                            <div class="blog">
+                                <div class="blog__thumb">
+                                    <a href="blog-details.html">
+                                        <img src="https://medias.fashionnetwork.com/image/upload/c_fill,f_auto,g_face,h_208,w_208/v1/medias/db220cd4e01617aab225a2c9df92c3153121511.jpg" alt="blog images">
+                                    </a>
+                                </div>
+                                <div class="blog__details">
+                                    <div class="bl__date">
+                                        <span>4 Avril 2020</span>
+                                    </div>
+                                    <h2><a href="blog-details.html">La déroute des entreprises en temps de coronavirus : une affaire pour les hedge funds ?</a></h2>
+                                    <!-- <p></p>
+                                    <div class="blog__btn">
+                                        <a href="blog-details.html">Voir plus</a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Blog -->
+                    </div>
+                </div>
+                <!-- Start PAgenation -->
+                <!-- <div class="row">
+                    <div class="col-xs-12">
+                        <ul class="htc__pagenation">
+                           <li><a href="#"><i class="zmdi zmdi-chevron-left"></i></a></li> 
+                           <li><a href="#">1</a></li> 
+                           <li><a href="#">2</a></li> 
+                           <li><a href="#">3</a></li> 
+                           <li><a href="#">4</a></li> 
+                           <li><a href="#"><i class="zmdi zmdi-more"></i></a></li> 
+                           <li><a href="#">19</a></li> 
+                           <li class="active"><a href="#"><i class="zmdi zmdi-chevron-right"></i></a></li> 
+                        </ul>
+                    </div>
+                </div> -->
+                <!-- End PAgenation -->
+            </div>
+        </section>
+        <!-- End Blog Area -->
+        <!-- Start Banner Area -->
+        <!-- <div class="htc__banner__area">
+            <ul class="banner__list owl-carousel owl-theme clearfix">
+                <li><a href="product-details.html"><img src="images/banner/bn-3/1.jpg" alt="banner images"></a></li>
+                <li><a href="product-details.html"><img src="images/banner/bn-3/2.jpg" alt="banner images"></a></li>
+                <li><a href="product-details.html"><img src="images/banner/bn-3/3.jpg" alt="banner images"></a></li>
+                <li><a href="product-details.html"><img src="images/banner/bn-3/4.jpg" alt="banner images"></a></li>
+                <li><a href="product-details.html"><img src="images/banner/bn-3/5.jpg" alt="banner images"></a></li>
+                <li><a href="product-details.html"><img src="images/banner/bn-3/6.jpg" alt="banner images"></a></li>
+                <li><a href="product-details.html"><img src="images/banner/bn-3/1.jpg" alt="banner images"></a></li>
+                <li><a href="product-details.html"><img src="images/banner/bn-3/2.jpg" alt="banner images"></a></li>
+            </ul>
+        </div> -->
+        <!-- End Banner Area -->
+        <!-- End Banner Area -->
+        <!-- Start Footer Area -->
+        <!-- End Footer Style -->
+    </div>
+{% endblock %}
