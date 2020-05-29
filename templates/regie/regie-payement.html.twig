@@ -1,0 +1,254 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{ parent() }}
+	MBM - Paiement
+{% endblock %}
+
+{% block header '' %}
+
+{% block stylesheets %}
+	{{ parent() }}
+	<link rel="stylesheet" href="css/mbm/regie-budget.css">
+{% endblock %}
+
+{% block content %}
+
+
+
+<body>
+   
+    <div class="wrapper">
+    
+       
+        <div class="body__overlay"></div>
+        <div class="offset__wrapper">
+            <div class="search__area">
+                <div class="container" >
+                    <div class="row" >
+                        <div class="col-md-12" >
+                            <div class="search__inner">
+                                <form action="#" method="get">
+                                    <input placeholder="Search here... " type="text">
+                                    <button type="submit"></button>
+                                </form>
+                                <div class="search__close__btn">
+                                    <span class="search__close__btn_icon"><i class="zmdi zmdi-close"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shopping__cart">
+                <div class="shopping__cart__inner">
+                    <div class="offsetmenu__close__btn">
+                        <a href="#"><i class="zmdi zmdi-close"></i></a>
+                    </div>
+                    <div class="shp__cart__wrap">
+                        <div class="shp__single__product">
+                            <div class="shp__pro__thumb">
+                                <a href="#">
+                                    <img src="images/product-2/sm-smg/1.jpg" alt="product images">
+                                </a>
+                            </div>
+                            <div class="shp__pro__details">
+                                <h2><a href="product-details.html">BO&Play Wireless Speaker</a></h2>
+                                <span class="quantity">QTY: 1</span>
+                                <span class="shp__price">$105.00</span>
+                            </div>
+                            <div class="remove__btn">
+                                <a href="#" title="Remove this item"><i class="zmdi zmdi-close"></i></a>
+                            </div>
+                        </div>
+                        <div class="shp__single__product">
+                            <div class="shp__pro__thumb">
+                                <a href="#">
+                                    <img src="images/product-2/sm-smg/2.jpg" alt="product images">
+                                </a>
+                            </div>
+                            <div class="shp__pro__details">
+                                <h2><a href="product-details.html">Brone Candle</a></h2>
+                                <span class="quantity">QTY: 1</span>
+                                <span class="shp__price">$25.00</span>
+                            </div>
+                            <div class="remove__btn">
+                                <a href="#" title="Remove this item"><i class="zmdi zmdi-close"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="shoping__total">
+                        <li class="subtotal">Subtotal:</li>
+                        <li class="total__price">$130.00</li>
+                    </ul>
+                    <ul class="shopping__btn">
+                        <li><a href="cart.html">View Cart</a></li>
+                        <li class="shp__checkout"><a href="checkout.html">Checkout</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+     
+    
+        
+        <div class="checkout-wrap ptb--100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="checkout__inner">
+                            <div class="accordion-list">
+                                <div class="accordion">
+                                    <div class="accordion__title">
+                                       Adresse de facturation
+                                    </div>
+                                   <div class="accordion__body">
+                                        <div class="bilinfo">
+                                            <form action="#">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="single-input mt-0">
+                                                            <select name="bil-country" id="bil-country">
+                                                                <option value="select">Séléctionner votre pays</option>
+                                                                <option value="arb">France</option>
+                                                                <option value="ban">Espagne</option>
+                                                                <option value="ind">Portugal</option>
+                                                                <option value="uk">Suisse</option>
+                                                                <option value="usa">Belgique</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="single-input">
+                                                            <input type="text" placeholder="Prénom">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="single-input">
+                                                            <input type="text" placeholder="Nom de famille">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="single-input">
+                                                            <input type="text" placeholder="Adresse">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="single-input">
+                                                            <input type="text" placeholder="Code/Etage/N° appartement (optionnel)">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="single-input">
+                                                            <input type="text" placeholder="Code postale">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="single-input">
+                                                            <input type="text" placeholder="Ville">
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="accordion__title">
+                                        Information de paiement
+                                    </div>
+                                    <div class="accordion__body">
+                                        <div class="bilinfo">
+                                            <form action="#">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="single-input mt-0">
+                                                            <select name="bil-country" id="bil-country">
+                                                                <option value="select">Sélectionner votre type de carte</option>
+                                                                <option value="arb">Visa</option>
+                                                                <option value="ban">MasterCard</option>
+                                                                <option value="ind">CB</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="single-input">
+                                                            <input type="text" placeholder="N° de carte">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="single-input">
+                                                            <input type="text" placeholder="Date d'expiration">
+                                                        </div>
+                                                    </div>
+                                                     <div class="col-md-6">
+                                                        <div class="single-input">
+                                                            <input type="text" placeholder="CVV">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="single-input">
+                                                            <input type="text" placeholder="Nom sur la carte">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="order-details">
+                            <h5 class="order-details__title">Votre commande</h5>
+                            <div class="order-details__item">
+                                <div class="single-item">
+                                    <div class="single-item__thumb">
+                                        <img src="images/product/jeanPanier.jpg" alt="ordered item">
+                                    </div>
+                                    <div class="single-item__content">
+                                        <a href="#">Jeans Talent</a>
+                                        <span class="price">Formule : Simple</span>
+                                        <span class="price">Durée :  30 jours</span>
+                                    </div>
+                                    <div class="single-item__remove">
+                                        <a href="#"><i class="zmdi zmdi-delete"></i></a>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                            <div class="order-details__count">
+                                <div class="order-details__count__single">
+                                    <h5>Sous-total</h5>
+                                    <span class="price">60.00 €</span>
+                                </div>
+                                <div class="order-details__count__single">
+                                    <h5>Taxe</h5>
+                                    <span class="price">4.00 €</span>
+                                </div>
+                            </div>
+                            <div class="ordre-details__total">
+                                <h5>Montant total</h5>
+                                <span class="price">64.00 €</span>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="row">
+                        <div class="col-md-8">
+                        <br/>
+                        
+                         <div class="sticky cr__btn" style="position:sticky;">
+                            <a href="{{ path('regie-list') }}">PAYER MA COMMANDE</a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+{% endblock %}
+
+{% block footer '' %}

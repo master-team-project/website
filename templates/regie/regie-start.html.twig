@@ -1,0 +1,140 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{ parent() }}
+	MBM - Register Page
+{% endblock %}
+
+{% block header '' %}
+
+{% block stylesheets %}
+	{{ parent() }}
+	<link rel="stylesheet" href="css/mbm/register.css">
+{% endblock %}
+
+{% block content %}
+
+	<div class="container">
+		<div class="table-wrapper">
+			<div class="table-title">
+				<div class="row">
+					<div class="col-sm-6">
+						<h2 style="color:white;">Ma liste de campagnes publicitaire</h2>
+					</div>
+					<div class="col-sm-6">
+
+
+						<div class="wrap-login-form-btn" style="width:55%;background-color:yellow;">
+							<div class="login-form-bgbtn" style"background-color:yellow;"></div>
+							<button class="login-form-btn" style"background-color:yellow;">
+								<a href="#addEmployeeModal" data-toggle="modal" style="color: white;background-color:">Ajouter une campagne
+								</a>
+							</button>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+			<table class="table table-striped table-hover">
+				<thead>
+					<tr>
+						<th>
+							<span class="custom-checkbox">
+								<input type="checkbox" id="selectAll">
+								<label for="selectAll"></label>
+							</span>
+						</th>
+						<th>Nom de la campagne</th>
+						<th>Lien API</th>
+						<th>Age de la cible</th>
+						<th>CSP de la cible</th>
+						<th>Gamme de prix</th>
+						<th>Action</th>
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td></td>
+						<td>Vous n'avez pas encore de campagne. Pour ajouter votre première campagne, cliquer sur le bouton "Ajouter une Campagner".
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+
+
+					</tr>
+
+				</tbody>
+			</table>
+			<div class="clearfix">
+				<div class="hint-text">Affichage de
+					<b>0</b>
+					entrée sur
+					<b>0</b>
+					entrée</div>
+				<ul class="pagination">
+					<li class="page-item disabled">
+						<a href="#">Précédant</a>
+					</li>
+					<li class="page-item active">
+						<a href="#" class="page-link">1</a>
+					</li>
+					<li class="page-item">
+						<a href="#" class="page-link">2</a>
+					</li>
+					<li class="page-item">
+						<a href="#" class="page-link">3</a>
+					</li>
+					<li class="page-item">
+						<a href="#" class="page-link">4</a>
+					</li>
+					<li class="page-item">
+						<a href="#" class="page-link">5</a>
+					</li>
+					<li class="page-item">
+						<a href="#" class="page-link">Suivant</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="addEmployeeModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form>
+					<div class="modal-header">
+						<h4 class="modal-title">Ajouter une campagne</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label>Nom de la campagne</label>
+							<input type="text" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Liens API</label>
+							<input type="text" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Age de la cible</label>
+							<input class="form-control" required></input>
+					</div>
+					<div class="form-group">
+						<label>CSP de la cible</label>
+						<input type="text" class="form-control" required>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<input type="button" class="btn btn-default" data-dismiss="modal" value="Annuler">
+					<button type="submit" class="btn btn-success" value="Ajouter">
+						<a href="{{ path('regie-list') }}">Ajouter</a>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>{% endblock %}{% block footer '' %}

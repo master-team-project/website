@@ -357,7 +357,7 @@ class MainController extends AbstractController
     /**
      * @Route("/regie-register3", name="regie-register3")
      */
-    public function regieRegister3()
+    public function regieRegister3() 
     {
         return $this->render('regie/regie-register3.html.twig', [
             'controller_name' => 'MainController',
@@ -373,13 +373,41 @@ class MainController extends AbstractController
         ]);
     }
        /**
-     * @Route("/regie", name="regie")
+     * @Route("/regie-list", name="regie-list")
      */
-    public function regie()
+    public function regieList()
     {
-        return $this->render('regie/regie.html.twig', [
+        return $this->render('regie/regie-list.html.twig', [
             'controller_name' => 'MainController',
         ]);
     }
+      /**
+     * @Route("/regie-budget", name="regie-budget")
+     */
+    public function regieBudget()
+    {
+        return $this->render('regie/regie-budget.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+      /**
+     * @Route("/regie-payement", name="regie-payement")
+     */
+    public function regiePayement()
+    {
+        return $this->render('regie/regie-payement.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+       /**
+     * @Route("/regie-start", name="regie-start")
+     */
+    public function regieStart()
+    {
+        return $this->render('regie/regie-start.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+    
     
 }
