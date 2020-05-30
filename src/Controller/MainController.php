@@ -219,6 +219,50 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
+
+    /**
+     * @Route("/detail-product-chic", name="detail-product-chic")
+     */
+    public function detailProductChic()
+    {
+        return $this->render('shop/detail-product-chic.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+
+     /**
+     * @Route("/cart", name="cart")
+     */
+    public function cart()
+    {
+        return $this->render('shop/cart.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+
+    /**
+     * @Route("/order", name="order")
+     */
+    public function order()
+    {
+        return $this->render('shop/order.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+
+     /**
+     * @Route("/detail-product-casual", name="detail-product-casual")
+     */
+    public function detailProductCasual()
+    {
+        return $this->render('shop/detail-product-casual.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+
+
+    
+
      /**
      * @Route("/panier", name="panier")
      */
@@ -372,12 +416,22 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
-       /**
+    /**
      * @Route("/regie", name="regie")
      */
     public function regie()
     {
         return $this->render('regie/regie.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+
+    /**
+     * @Route("/contact", name="contact")
+     */
+    public function contact()
+    {
+        return $this->render('shop/contact.html.twig', [
             'controller_name' => 'MainController',
         ]);
     }

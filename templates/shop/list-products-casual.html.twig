@@ -1,16 +1,16 @@
 {% extends 'base.html.twig' %}
 
-{% block title %} {{ parent() }} MBM - Login Page {% endblock %}
+{% block title %} {{ parent() }} MBM - Products Page {% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="css/mbm/list-prod.css">
+{% endblock %}
 
 {% block content %}
 
-
-
- 
    <div class="wrapper">
        
-        
-
         <div class="body__overlay"></div>
         <!-- Start Offset Wrapper -->
         <div class="offset__wrapper">
@@ -136,7 +136,7 @@
                                         <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
                                             <div class="category">
                                                 <div class="ht__cat__thumb">
-                                                    <a href="product-details.html">
+                                                    <a href="{{ path('detail-product-casual') }}">
                                                         <img src="images/casual/blousondotty.jpg" alt="product images">
                                                     </a>
                                                 </div>
@@ -144,9 +144,9 @@
                                                     <ul class="product__action">
                                                         <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
 
-                                                        <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
+                                                        <li><a href="{{ path('cart') }}"><i class="icon-handbag icons"></i></a></li>
 
-                                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
+                                                        {# <li><a href="#"><i class="icon-shuffle icons"></i></a></li> #}
                                                     </ul>
                                                 </div>
                                                 <div class="fr__product__inner">
@@ -172,7 +172,7 @@
 
                                                         <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
 
-                                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
+                                                        {# <li><a href="#"><i class="icon-shuffle icons"></i></a></li> #}
                                                     </ul>
                                                 </div>
                                                 <div class="fr__product__inner">
@@ -198,7 +198,7 @@
 
                                                         <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
 
-                                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
+                                                        {# <li><a href="#"><i class="icon-shuffle icons"></i></a></li> #}
                                                     </ul>
                                                 </div>
                                                 <div class="fr__product__inner">
@@ -224,7 +224,7 @@
 
                                                         <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
 
-                                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
+                                                        {# <li><a href="#"><i class="icon-shuffle icons"></i></a></li> #}
                                                     </ul>
                                                 </div>
                                                 <div class="fr__product__inner">
@@ -250,7 +250,7 @@
 
                                                         <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
 
-                                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
+                                                        {# <li><a href="#"><i class="icon-shuffle icons"></i></a></li> #}
                                                     </ul>
                                                 </div>
                                                 <div class="fr__product__inner">
@@ -276,7 +276,7 @@
 
                                                         <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
 
-                                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
+                                                        {# <li><a href="#"><i class="icon-shuffle icons"></i></a></li> #}
                                                     </ul>
                                                 </div>
                                                 <div class="fr__product__inner">
@@ -302,7 +302,7 @@
 
                                                         <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
 
-                                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
+                                                        {# <li><a href="#"><i class="icon-shuffle icons"></i></a></li> #}
                                                     </ul>
                                                 </div>
                                                 <div class="fr__product__inner">
@@ -328,7 +328,7 @@
 
                                                         <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
 
-                                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
+                                                        {# <li><a href="#"><i class="icon-shuffle icons"></i></a></li> #}
                                                     </ul>
                                                 </div>
                                                 <div class="fr__product__inner">
@@ -354,7 +354,7 @@
 
                                                         <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
 
-                                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
+                                                        {# <li><a href="#"><i class="icon-shuffle icons"></i></a></li> #}
                                                     </ul>
                                                 </div>
                                                 <div class="fr__product__inner">
@@ -380,7 +380,7 @@
 
                                                         <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
 
-                                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
+                                                        {# <li><a href="#"><i class="icon-shuffle icons"></i></a></li> #}
                                                     </ul>
                                                 </div>
                                                 <div class="fr__product__inner">
@@ -406,7 +406,7 @@
 
                                                         <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
 
-                                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
+                                                        {# <li><a href="#"><i class="icon-shuffle icons"></i></a></li> #}
                                                     </ul>
                                                 </div>
                                                 <div class="fr__product__inner">
@@ -432,7 +432,7 @@
 
                                                         <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
 
-                                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
+                                                        {# <li><a href="#"><i class="icon-shuffle icons"></i></a></li> #}
                                                     </ul>
                                                 </div>
                                                 <div class="fr__product__inner">
@@ -451,7 +451,7 @@
                                                 <!-- Start List Product -->
                                                 <div class="ht__list__product">
                                                     <div class="ht__list__thumb">
-                                                        <a href="product-details.html"><img src="images/casual/blousondotty.jpg" alt="product images"></a>
+                                                        <a href="{{ path('detail-product-casual') }}"><img src="images/casual/blousondotty.jpg" alt="product images"></a>
                                                     </div>
                                                     <div class="htc__list__details">
                                                         <h2><a href="product-details.html">Blouson Dotty </a></h2>
@@ -467,7 +467,7 @@
                                                         </ul>
                                                         <p>Lorem ipsum dolor sit amet, consectetur adipisLorem ipsum dolor sit amet, consec adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqul Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                                         <div class="fr__list__btn">
-                                                            <a class="fr__btn" href="cart.html">PANIER</a>
+                                                            <a class="fr__btn" href="{{ path('cart') }}">PANIER</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -491,7 +491,7 @@
                                                         </ul>
                                                         <p>Lorem ipsum dolor sit amet, consectetur adipisLorem ipsum dolor sit amet, consec adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqul Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                                         <div class="fr__list__btn">
-                                                            <a class="fr__btn" href="cart.html">PANIER</a>
+                                                            <a class="fr__btn" href="{{ path('cart') }}">PANIER</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -515,7 +515,7 @@
                                                         </ul>
                                                         <p>Lorem ipsum dolor sit amet, consectetur adipisLorem ipsum dolor sit amet, consec adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqul Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                                         <div class="fr__list__btn">
-                                                            <a class="fr__btn" href="cart.html">PANIER</a>
+                                                            <a class="fr__btn" href="{{ path('cart') }}">PANIER</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -539,7 +539,7 @@
                                                         </ul>
                                                         <p>Lorem ipsum dolor sit amet, consectetur adipisLorem ipsum dolor sit amet, consec adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqul Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                                         <div class="fr__list__btn">
-                                                            <a class="fr__btn" href="cart.html">PANIER</a>
+                                                            <a class="fr__btn" href="{{ path('cart') }}">PANIER</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -577,10 +577,10 @@
                                             <div class="slider__range--output">
                                                 <div class="price__output--wrap">
                                                     <div class="price--output">
-                                                        <span>Price :</span><input type="text" id="amount" readonly>
+                                                        <span>Prix :</span><input type="text" id="amount" readonly>
                                                     </div>
                                                     <div class="price--filter">
-                                                        <a href="#">Filter</a>
+                                                        <a href="#">Filtre</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -595,7 +595,7 @@
                                 <h4 class="title__line--4">Style</h4>
                                 <ul class="ht__cat__list">
                                     <li><a href="{{ path('list-products-chic') }}">Chic</a></li>
-                                    <li><a href="{{ path('list-products-casual') }}">Casual</a></li>
+                                    <li><a class="active" href="{{ path('list-products-casual') }}">Casual</a></li>
                                     <li><a href="{{ path('list-products-decontracte') }}">Décontracté</a></li>
                                     <li><a href="{{ path('list-products-street') }}">Street</a></li>
                                     <li><a href="{{ path('list-products-accessoire') }}">Accessoires</a></li>
@@ -743,7 +743,7 @@
         </section>
         <!-- End Product Grid -->
         <!-- Start Brand Area -->
-        <div class="htc__brand__area bg__cat--4">
+        {# <div class="htc__brand__area bg__cat--4">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -762,10 +762,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> #}
         <!-- End Brand Area -->
         <!-- Start Banner Area -->
-        <div class="htc__banner__area">
+        {# <div class="htc__banner__area">
             <ul class="banner__list owl-carousel owl-theme clearfix">
                 <li><a href="product-details.html"><img src="images/banner/bn-3/1.jpg" alt="banner images"></a></li>
                 <li><a href="product-details.html"><img src="images/banner/bn-3/2.jpg" alt="banner images"></a></li>
@@ -776,7 +776,7 @@
                 <li><a href="product-details.html"><img src="images/banner/bn-3/1.jpg" alt="banner images"></a></li>
                 <li><a href="product-details.html"><img src="images/banner/bn-3/2.jpg" alt="banner images"></a></li>
             </ul>
-        </div>
+        </div> #}
         <!-- End Banner Area -->
         <!-- End Banner Area -->
         <!-- Start Footer Area -->

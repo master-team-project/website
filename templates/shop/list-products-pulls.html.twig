@@ -2,6 +2,11 @@
 
 {% block title %} {{ parent() }} MBM - Login Page {% endblock %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="css/mbm/list-prod.css">
+{% endblock %}
+
 {% block content %}
 
 
@@ -577,10 +582,10 @@
                                             <div class="slider__range--output">
                                                 <div class="price__output--wrap">
                                                     <div class="price--output">
-                                                        <span>Price :</span><input type="text" id="amount" readonly>
+                                                        <span>Prix :</span><input type="text" id="amount" readonly>
                                                     </div>
                                                     <div class="price--filter">
-                                                        <a href="#">Filter</a>
+                                                        <a href="#">Filtre</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -609,7 +614,7 @@
                                 <ul class="ht__cat__list">
                                     <li><a href="{{ path('list-products-pantalons') }}">Pantalons</a></li> 
                                     <li><a href="{{ path('list-products-jeans') }}">Jeans</a></li>
-                                    <li><a href="{{ path('list-products-pulls') }}">Pull</a></li>
+                                    <li><a class="active" href="{{ path('list-products-pulls') }}">Pull</a></li>
                                     <li><a href="{{ path('list-products-tshirts') }}">T-shirt</a></li>
                                     <li><a href="{{ path('list-products-chemises') }}">Chemise</a></li>
                                     <li><a href="{{ path('list-products-polos') }}">Polos</a></li>
@@ -743,7 +748,7 @@
         </section>
         <!-- End Product Grid -->
         <!-- Start Brand Area -->
-        <div class="htc__brand__area bg__cat--4">
+        {# <div class="htc__brand__area bg__cat--4">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -762,10 +767,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> #}
         <!-- End Brand Area -->
         <!-- Start Banner Area -->
-        <div class="htc__banner__area">
+        {# <div class="htc__banner__area">
             <ul class="banner__list owl-carousel owl-theme clearfix">
                 <li><a href="product-details.html"><img src="images/banner/bn-3/1.jpg" alt="banner images"></a></li>
                 <li><a href="product-details.html"><img src="images/banner/bn-3/2.jpg" alt="banner images"></a></li>
@@ -776,7 +781,7 @@
                 <li><a href="product-details.html"><img src="images/banner/bn-3/1.jpg" alt="banner images"></a></li>
                 <li><a href="product-details.html"><img src="images/banner/bn-3/2.jpg" alt="banner images"></a></li>
             </ul>
-        </div>
+        </div> #}
         <!-- End Banner Area -->
         <!-- End Banner Area -->
         <!-- Start Footer Area -->

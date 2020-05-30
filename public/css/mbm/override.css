@@ -9,5 +9,9 @@ a#scrollUp {
     background: #564D85;
 }
 
+.header__search a::before {
+    background: none;
+}
+
 
 /* End Override */

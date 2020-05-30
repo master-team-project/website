@@ -563,3 +563,9 @@ button:hover {
 .login-form__a__login:hover {
     color: #2B2743;
 }
+
+.login-form-btn a,
+.login-form-btn a:active,
+.login-form-btn a:hover {
+    color: white;
+}

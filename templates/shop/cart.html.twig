@@ -1,0 +1,279 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ parent() }} MBM - 404 Cart Page {% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <!-- <link rel="stylesheet" href="css/mbm/cart.css"> -->
+{% endblock %}
+
+{% block content %}
+ 
+<!-- Body main wrapper start -->
+  <div class="wrapper">
+
+      <div class="body__overlay"></div>
+      <!-- Start Offset Wrapper -->
+      <div class="offset__wrapper">
+          <!-- Start Search Popap -->
+          <div class="search__area">
+              <div class="container" >
+                  <div class="row" >
+                      <div class="col-md-12" >
+                          <div class="search__inner">
+                              <form action="#" method="get">
+                                  <input placeholder="Search here... " type="text">
+                                  <button type="submit"></button>
+                              </form>
+                              <div class="search__close__btn">
+                                  <span class="search__close__btn_icon"><i class="zmdi zmdi-close"></i></span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- End Search Popap -->
+          <!-- Start Cart Panel -->
+          <div class="shopping__cart">
+              <div class="shopping__cart__inner">
+                  <div class="offsetmenu__close__btn">
+                      <a href="#"><i class="zmdi zmdi-close"></i></a>
+                  </div>
+                  <div class="shp__cart__wrap">
+                      <div class="shp__single__product">
+                          <div class="shp__pro__thumb">
+                              <a href="#">
+                                  <img src="images/product-2/sm-smg/1.jpg" alt="product images">
+                              </a>
+                          </div>
+                          <div class="shp__pro__details">
+                              <h2><a href="product-details.html">BO&Play Wireless Speaker</a></h2>
+                              <span class="quantity">QTY: 1</span>
+                              <span class="shp__price">$105.00</span>
+                          </div>
+                          <div class="remove__btn">
+                              <a href="#" title="Remove this item"><i class="zmdi zmdi-close"></i></a>
+                          </div>
+                      </div>
+                      <div class="shp__single__product">
+                          <div class="shp__pro__thumb">
+                              <a href="#">
+                                  <img src="images/product-2/sm-smg/2.jpg" alt="product images">
+                              </a>
+                          </div>
+                          <div class="shp__pro__details">
+                              <h2><a href="product-details.html">Brone Candle</a></h2>
+                              <span class="quantity">QTY: 1</span>
+                              <span class="shp__price">$25.00</span>
+                          </div>
+                          <div class="remove__btn">
+                              <a href="#" title="Remove this item"><i class="zmdi zmdi-close"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <ul class="shoping__total">
+                      <li class="subtotal">Subtotal:</li>
+                      <li class="total__price">$130.00</li>
+                  </ul>
+                  <ul class="shopping__btn">
+                      <li><a href="cart.html">View Cart</a></li>
+                      <li class="shp__checkout"><a href="checkout.html">Checkout</a></li>
+                  </ul>
+              </div>
+          </div>
+          <!-- End Cart Panel -->
+      </div>
+      <!-- End Offset Wrapper -->
+      <!-- Start Bradcaump area -->
+      {# <div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url(images/bg/shopping-cart-1275480__340.webp) no-repeat scroll center center / cover ;"> #}
+      <div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQOIRwNnTiV6Tzo53VQeyNLbYDIYGYJTi8VdiYX_T2XSxUDGoCV&usqp=CAU) no-repeat scroll center center / cover ;">
+          <div class="ht__bradcaump__wrap">
+              <div class="container">
+                  <!-- <div class="row">
+                      <div class="col-xs-12">
+                          <div class="bradcaump__inner">
+                              <nav class="bradcaump-inner">
+                                <a class="breadcrumb-item" href="index.html">Home</a>
+                                <span class="brd-separetor"><i class="zmdi zmdi-chevron-right"></i></span>
+                                <span class="breadcrumb-item active">shopping cart</span>
+                              </nav>
+                          </div>
+                      </div>
+                  </div> -->
+              </div>
+          </div>
+      </div>
+      <!-- End Bradcaump area -->
+      <!-- cart-main-area start -->
+      <div class="cart-main-area ptb--100 bg__white">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                      <form action="#">               
+                          <div class="table-content table-responsive">
+                              <table>
+                                  <thead>
+                                      <tr>
+                                          <th class="product-thumbnail">Produits</th>
+                                          <th class="product-name">Nom du produit</th>
+                                          <th class="product-price">Prix</th>
+                                          <th class="product-quantity">Quantité</th>
+                                          <th class="product-subtotal">Total</th>
+                                          <th class="product-remove">Supprimer</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                          <td class="product-thumbnail"><a href="#"><img src="https://cdn.armandthiery.fr/products_images/prod_31375/h_costume-abysso-coupe-ajustee-at-homme-front-0.jpg" alt="product img" /></a></td>
+                                          <td class="product-name"><a href="#">Costume ABYSSO - Coupe ajustée</a>
+                                              <ul  class="pro__prize">
+                                                  <li class="old__prize">268.99 €</li>
+                                                  <li>168.99 €</li>
+                                              </ul>
+                                          </td>
+                                          <td class="product-price"><span class="amount">168.99 €</span></td>
+                                          <td class="product-quantity"><input type="number" value="1" /></td>
+                                          <td class="product-subtotal">168.99 €</td>
+                                          <td class="product-remove"><a href="#"><i class="icon-trash icons"></i></a></td>
+                                      </tr>
+                                      <tr>
+                                          <td class="product-thumbnail"><a href="#"><img src="https://cdn.armandthiery.fr/products_images/prod_31374/h_costume-abysso-coupe-slim-at-homme-front-0.jpg" alt="product img" /></a></td>
+                                          <td class="product-name"><a href="#">Costume ABYSSO - Coupe slim</a>
+                                              <ul  class="pro__prize">
+                                                  <li class="old__prize">218.99 €</li>
+                                                  <li>199.99 €</li>
+                                              </ul>
+                                          </td>
+                                          <td class="product-price"><span class="amount">199.99 €</span></td>
+                                          <td class="product-quantity"><input type="number" value="1" /></td>
+                                          <td class="product-subtotal">199.99 €</td>
+                                          <td class="product-remove"><a href="#"><i class="icon-trash icons"></i></a></td>
+                                      </tr>
+                                      <tr>
+                                          <td class="product-thumbnail"><a href="#"><img src="https://cdn.armandthiery.fr/products_images/prod_13771/h_91075005-per-l-uomo-BLEU-front-45.jpg" alt="product img" /></a></td>
+                                          <td class="product-name"><a href="#">Veste de costume slim TRIOBLU</a>
+                                              <ul  class="pro__prize">
+                                                  <li class="old__prize">169.00 €</li>
+                                                  <li>139.00 €</li>
+                                              </ul>
+                                          </td>
+                                          <td class="product-price"><span class="amount">139.00 €</span></td>
+                                          <td class="product-quantity"><input type="number" value="1" /></td>
+                                          <td class="product-subtotal">139.00 €</td>
+                                          <td class="product-remove"><a href="#"><i class="icon-trash icons"></i></a></td>
+                                      </tr>
+                                      <tr>
+                                          <td class="product-thumbnail"><a href="#"><img src="https://cdn.armandthiery.fr/products_images/prod_24986/h_chemise-unie-manches-longues-executive-BLANC-front-48.jpg" alt="product img" /></a></td>
+                                          <td class="product-name"><a href="#">Chemise satin</a>
+                                              <ul  class="pro__prize">
+                                                  <li class="old__prize">49.99 €</li>
+                                                  <li>39.99 €</li>
+                                              </ul>
+                                          </td>
+                                          <td class="product-price"><span class="amount">39.99 €</span></td>
+                                          <td class="product-quantity"><input type="number" value="1" /></td>
+                                          <td class="product-subtotal">39.99 €</td>
+                                          <td class="product-remove"><a href="#"><i class="icon-trash icons"></i></a></td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                          {# <div class="row">
+                              <div class="col-md-12 col-sm-12 col-xs-12">
+                                  <div class="buttons-cart--inner">
+                                      <div class="buttons-cart">
+                                          <a href="#">Continuer vos achats</a>
+                                      </div>
+                                      <div class="buttons-cart checkout--btn">
+                                          <a href="#">Update</a>
+                                          <a href="#">Checkout</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div> #}
+                          <div class="row">
+                              <div class="col-md-6 col-sm-12 col-xs-12">
+                                  <div class="ht__coupon__code">
+                                      <span>Entrer votre code promo</span>
+                                      <div class="coupon__box">
+                                          <input type="text" placeholder="">
+                                          <div class="ht__cp__btn">
+                                              <a href="#">Envoyer</a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6 col-sm-12 col-xs-12 smt-40 xmt-40">
+                                  <div class="htc__cart__total">
+                                      <h6>Total Panier</h6>
+                                      <div class="cart__desk__list">
+                                          <ul class="cart__desc">
+                                              <li>Sous-total</li>
+                                              <li>Frais</li>
+                                              <li>Livraison</li>
+                                          </ul>
+                                          <ul class="cart__price">
+                                              <li>547,97 €</li>
+                                              <li>9.00 €</li>
+                                              <li>0</li>
+                                          </ul>
+                                      </div>
+                                      <div class="cart__total">
+                                          <span>Total</span>
+                                          <span>556,97 €</span>
+                                      </div>
+                                      <ul class="payment__btn">
+                                          <li class="active"><a href="{{ path('order') }}">paiement</a></li>
+                                          <li><a href="{{ path('list-products-chic') }}">continuer vos achats</a></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </form> 
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- cart-main-area end -->
+      <!-- Start Brand Area -->
+      <!-- <div class="htc__brand__area bg__cat--4">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="ht__brand__inner">
+                          <ul class="brand__list owl-carousel clearfix">
+                              <li><a href="#"><img src="images/brand/1.png" alt="brand images"></a></li>
+                              <li><a href="#"><img src="images/brand/2.png" alt="brand images"></a></li>
+                              <li><a href="#"><img src="images/brand/3.png" alt="brand images"></a></li>
+                              <li><a href="#"><img src="images/brand/4.png" alt="brand images"></a></li>
+                              <li><a href="#"><img src="images/brand/5.png" alt="brand images"></a></li>
+                              <li><a href="#"><img src="images/brand/5.png" alt="brand images"></a></li>
+                              <li><a href="#"><img src="images/brand/1.png" alt="brand images"></a></li>
+                              <li><a href="#"><img src="images/brand/2.png" alt="brand images"></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div> -->
+      <!-- End Brand Area -->
+      <!-- Start Banner Area -->
+      <!-- <div class="htc__banner__area">
+          <ul class="banner__list owl-carousel owl-theme clearfix">
+              <li><a href="product-details.html"><img src="images/banner/bn-3/1.jpg" alt="banner images"></a></li>
+              <li><a href="product-details.html"><img src="images/banner/bn-3/2.jpg" alt="banner images"></a></li>
+              <li><a href="product-details.html"><img src="images/banner/bn-3/3.jpg" alt="banner images"></a></li>
+              <li><a href="product-details.html"><img src="images/banner/bn-3/4.jpg" alt="banner images"></a></li>
+              <li><a href="product-details.html"><img src="images/banner/bn-3/5.jpg" alt="banner images"></a></li>
+              <li><a href="product-details.html"><img src="images/banner/bn-3/6.jpg" alt="banner images"></a></li>
+              <li><a href="product-details.html"><img src="images/banner/bn-3/1.jpg" alt="banner images"></a></li>
+              <li><a href="product-details.html"><img src="images/banner/bn-3/2.jpg" alt="banner images"></a></li>
+          </ul>
+      </div> -->
+      <!-- End Banner Area -->
+      <!-- Start Footer Area -->
+      <!-- End Footer Style -->
+  </div>
+<!-- Body main wrapper end -->
+{% endblock %}
