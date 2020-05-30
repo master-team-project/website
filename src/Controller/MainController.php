@@ -427,6 +427,54 @@ class MainController extends AbstractController
     }
 
     /**
+     * @Route("/regie-list", name="regie-list")
+     */
+    public function regieList()
+    {
+        return $this->render('regie/regie-list.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+      /**
+     * @Route("/regie-budget", name="regie-budget")
+     */
+    public function regieBudget()
+    {
+        return $this->render('regie/regie-budget.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+      /**
+     * @Route("/regie-payement", name="regie-payement")
+     */
+    public function regiePayement()
+    {
+        return $this->render('regie/regie-payement.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+       /**
+     * @Route("/regie-start", name="regie-start")
+     */
+    public function regieStart()
+    {
+        return $this->render('regie/regie-start.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+
+    /**
+     * @Route("/regie-detail", name="regie-detail")
+     */
+    public function regieDetail()
+    {
+        return $this->render('regie/regie-detail.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+    
+
+    /**
      * @Route("/contact", name="contact")
      */
     public function contact()

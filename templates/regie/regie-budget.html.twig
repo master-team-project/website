@@ -1,0 +1,127 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{ parent() }}
+	MBM - Paiement
+{% endblock %}
+
+{% block header '' %}
+
+{% block stylesheets %}
+	{{ parent() }}
+	<link rel="stylesheet" href="css/mbm/regie-budget.css">
+{% endblock %}
+
+{% block content %}
+
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+	<div class="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-8 col-sm-7 col-xs-12">
+					<div class="box">
+						<h3 class="box-title">Choisir votre budget</h3>
+						<div class="plan-selection">
+							<div class="plan-data">
+								<input id="question1" name="question" type="radio" class="with-font" value="sel"/>
+								<label for="question1">Simple</label>
+								<p class="plan-text">
+									Budget mensuel max : 60 €</p>
+								<span class="plan-price">2 € / jour</span>
+							</div>
+						</div>
+						<div class="plan-selection">
+							<div class="plan-data">
+								<input id="question2" name="question" type="radio" class="with-font" value="sel"/>
+								<label for="question2">Classic</label>
+								<p class="plan-text">
+									Budget mensuel max : 155 €</p>
+								<span class="plan-price">5 € / jour</span>
+							</div>
+						</div>
+						<div class="plan-selection">
+							<div class="plan-data">
+								<input id="question3" name="question" type="radio" class="with-font" value="sel"/>
+								<label for="question3">Premium +</label>
+								<p class="plan-text">Budget mensuel max : 210 €</p>
+								<span class="plan-price">7 € / jour</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="container-login-form-btn">
+						<div class="box">
+							<h3 class="box-title">Indiquer la durée de la campagne en jour
+							</h3>
+							<div class="plan-selection">
+								<div class="plan-data">
+
+									<div class="form-group">
+
+										<input type="text" class="form-control" id="" aria-describedby="" placeholder="Entrer le nombre de jour ">
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="container-login-form-btn">
+						<div class="wrap-login-form-btn">
+							<div class="login-form-bgbtn"></div>
+							<button class="login-form-btn">
+								<a href="{{ path('regie-payement') }}" style="color:white;border-color:white;">Suivant</a>
+							</button>
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+
+					<div class="widget">
+						<h4 class="widget-title">Fonctionnement de votre budget</h4>
+						<div class="summary-block">
+							<div class="summary-content">
+								<div class="summary-head">
+									<h5 class="summary-title">Ce que vous payez ?</h5>
+								</div>
+								<p class="plan-text">Vous ne payez que lorsqu'un utilisateur clique sur votre annonce.</p>
+							</div>
+						</div>
+						<div class="summary-block">
+							<div class="summary-content">
+								<div class="summary-head">
+									<h5 class="summary-title">Votre moyenne quotidienne ?</h5>
+								</div>
+								<p class="plan-text">Vous ne payez que lorsqu'un utilisateur clique sur votre annonce ou appelle votre entreprise.</p>
+							</div>
+						</div>
+						<div class="summary-block">
+							<div class="summary-content">
+								<div class="summary-head">
+									<h5 class="summary-title">Si vous changez d'avis ?</h5>
+								</div>
+								<p class="plan-text">Vous pouvez essayer de diffuser votre annonce, sans engagement de votre part. Sachez que vous pouvez ajuster votre budget ou désactiver votre annonce à tout moment</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+
+{% endblock %}
+
+{% block footer '' %}

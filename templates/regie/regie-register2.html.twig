@@ -1,81 +1,85 @@
 {% extends 'base.html.twig' %}
 
-{% block title %} {{ parent() }} MBM - Register Page {% endblock %}
+{% block title %}
+	{{ parent() }}
+	MBM - Register Page
+{% endblock %}
 
 {% block header '' %}
 
 {% block stylesheets %}
-    {{ parent() }}
-    <link rel="stylesheet" href="css/mbm/register.css">
+	{{ parent() }}
+	<link rel="stylesheet" href="css/mbm/register.css">
 {% endblock %}
 
 {% block content %}
 
-    <div class="wrapper-content">
-        <div class="wrapper-content__container">
-            <div class="wrapper-content__container__left-side" style="background-image: url('images/regie/entreprise.jpg');width:56%;">
-            </div>
-            <div class="wrapper-content__container__right-side" style="width:44%;">
-                <form class="login-form validate-form">
-                    
-                    <span class="login-form__title">
-                        Inscription
-                    </span>
+	<div class="wrapper-content">
+		<div class="wrapper-content__container">
+			<div class="wrapper-content__container__left-side" style="background-image: url('images/regie/entreprise.jpg');width:56%;"></div>
+			<div class="wrapper-content__container__right-side" style="width:44%;">
+				<form class="login-form validate-form">
 
-                    <div class="login-form__timeline">
-                        <div class="login-form__timeline__span__wrap">
-                            <span class="login-form__timeline__span">1</span>
-                            <span class="login-form__timeline__span_text">Informations personnelles</span>
-                        </div>
-                        <hr class="login-form__timeline__hr">
-                        <div class="login-form__timeline__span__wrap">
-                            <span class="login-form__timeline__span active">2</span>
-                            <span class="login-form__timeline__span_text">Information entreprise</span>
-                        </div>
-                        <hr class="login-form__timeline__hr">
-                        <div class="login-form__timeline__span__wrap">
-                            <span class="login-form__timeline__span">3</span>
-                            <span class="login-form__timeline__span_text">Fin</span>
-                        </div>
-                    </div>
+					<span class="login-form__title">
+						Inscription
+					</span>
 
-                    <div class="login-form__input__wrap validate-input" data-validate="Name is required">
-                        <span class="login-form__input__label">Nom Entreprise</span>
-                        <input class="login-form__input" type="text" name="name" placeholder="Nom...">
-                        <span class="login-form__input__focus"></span>
-                    </div>
+					<div class="login-form__timeline">
+						<div class="login-form__timeline__span__wrap">
+							<span class="login-form__timeline__span">1</span>
+							<span class="login-form__timeline__span_text">Informations personnelles</span>
+						</div>
+						<hr class="login-form__timeline__hr">
+						<div class="login-form__timeline__span__wrap">
+							<span class="login-form__timeline__span active">2</span>
+							<span class="login-form__timeline__span_text">Information entreprise</span>
+						</div>
+						<hr class="login-form__timeline__hr">
+						<div class="login-form__timeline__span__wrap">
+							<span class="login-form__timeline__span">3</span>
+							<span class="login-form__timeline__span_text">Fin</span>
+						</div>
+					</div>
 
-                    <div class="login-form__input__wrap validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-                        <span class="login-form__input__label">N°Siren </span>
-                        <input class="login-form__input" type="text" name="email" placeholder="123456789...">
-                        <span class="login-form__input__focus"></span>
-                    </div>
+					<div class="login-form__input__wrap validate-input" data-validate="Name is required">
+						<span class="login-form__input__label">Nom Entreprise</span>
+						<input class="login-form__input" type="text" name="name" placeholder="Nom...">
+						<span class="login-form__input__focus"></span>
+					</div>
 
-                    <div class="login-form__input__wrap validate-input" data-validate="Username is required">
-                        <span class="login-form__input__label">Site web de l'entreprise</span>
-                        <input class="login-form__input" type="text" name="username" placeholder="www.mon-site.fr">
-                        <span class="login-form__input__focus"></span>
-                    </div>
+					<div class="login-form__input__wrap validate-input" data-validate="Valid email is required: ex@abc.xyz">
+						<span class="login-form__input__label">N°Siren
+						</span>
+						<input class="login-form__input" type="text" name="email" placeholder="123456789...">
+						<span class="login-form__input__focus"></span>
+					</div>
 
-                     <div class="login-form__input__wrap validate-input" data-validate="Number of salaried is required">
-                        <span class="login-form__input__label">Nombre de salarié dans votre entreprise </span>
-                        <input class="login-form__input" type="text" name="username" placeholder="50">
-                        <span class="login-form__input__focus"></span>
-                    </div>
+					<div class="login-form__input__wrap validate-input" data-validate="Username is required">
+						<span class="login-form__input__label">Site web de l'entreprise</span>
+						<input class="login-form__input" type="text" name="username" placeholder="www.mon-site.fr">
+						<span class="login-form__input__focus"></span>
+					</div>
 
-                    <div class="container-login-form-btn">
-                        <div class="wrap-login-form-btn">
-                            <div class="login-form-bgbtn"></div>
-                            <button class="login-form-btn">
-                                <a href="{{ path('regie-register3') }}" style="color: white;">Suivant</a>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-       
+					<div class="login-form__input__wrap validate-input" data-validate="Number of salaried is required">
+						<span class="login-form__input__label">Nombre de salarié dans votre entreprise
+						</span>
+						<input class="login-form__input" type="text" name="username" placeholder="50">
+						<span class="login-form__input__focus"></span>
+					</div>
+
+					<div class="container-login-form-btn">
+						<div class="wrap-login-form-btn">
+							<div class="login-form-bgbtn"></div>
+							<button class="login-form-btn">
+								<a href="{{ path('regie-register3') }}" style="color: white;">Suivant</a>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
 {% endblock %}
 
 {% block footer '' %}

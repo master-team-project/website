@@ -1,232 +1,89 @@
-
-
 <html>
 
-<head>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimal-ui"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>MBM Advertising</title>
+		<link rel="stylesheet" media="screen" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Lora:400,700"/>
+		<link rel="stylesheet" media="screen" href="https://www.grafikart.fr/assets/application.c0f78dc92304e8d3d2c5.css"/>
+	</head>
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>MBM Advertising</title>
-  <link rel="stylesheet" media="screen" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Lora:400,700" />
-  <link rel="stylesheet" media="screen" href="https://www.grafikart.fr/assets/application.c0f78dc92304e8d3d2c5.css" />
-</head>
+	<body class="">
+		<div class="site-container">
+			<header class="topbar" id="topbar">
+				<img class="topbar-logo" style="background-color: #404852;position: relative;bottom: 6px;" src="images/mbm/logo/MBM-logo-white.png"></a>
+			<nav class="topbar-menu">
+				<a class="topbar-menu_home" href="/">Accueil</a>
+				<a href="">Espace reservé uniquement aux professionnels</a>
+			</nav>
+			<div class="topbar-right">
+				<a class="btn btn-grey-border" href="{{ path('regie-register') }}">S&#39;inscrire</a>
+				<a class="btn" id="btn-login" style="background-color:#2998CD;color:white;border-color: #6d7a8b;" href="{{ path('regie-login') }}">Se connecter</a>
+			</div>
+			<div class="icon topbar-menu-icon" id="topbar-menu-icon">
+				<span></span>
+			</div>
+		</header>
 
-<body class="">
-  <div class="site-container">
-    <header class="topbar" id="topbar">
-      <img class="topbar-logo" style="background-color: #404852;position: relative;bottom: 6px;" src="images/mbm/logo/MBM-logo-white.png"></a>
-      <nav class="topbar-menu">
-        <a class="topbar-menu_home" href="/">Accueil</a><a href="">Espace reservé uniquement aux professionnels</a>
-      </nav>
-      <div class="topbar-right">
-        <a class="btn btn-grey-border" href="{{ path('regie-register') }}">S&#39;inscrire</a><a class="btn" id="btn-login" style="background-color:#2998CD;color:white;border-color: #6d7a8b;" href="{{ path('regie-login') }}">Se connecter</a>
-      </div>
-      <div class="icon topbar-menu-icon" id="topbar-menu-icon">
-        <span></span>
-      </div>
-    </header>
-    
-    <div class="has-stick-sidebar">
-      <div class="hero" style="height: 502px;">
-        <img class="home-icon-cloud home-icon-cloud2" src="https://www.grafikart.fr/assets/home/cloud2-86f06fadb95e43e931b839423a137694beae78a246d782acf2b6341693b7d91f.svg" alt="Cloud2" /><img class="home-icon-cloud home-icon-cloud2" src="https://www.grafikart.fr/assets/home/cloud2-86f06fadb95e43e931b839423a137694beae78a246d782acf2b6341693b7d91f.svg" alt="Cloud2" /><img class="home-icon-cloud home-icon-cloud1" src="https://www.grafikart.fr/assets/home/cloud1-d25dc994f283d78d9f20013870aa43e119fbacefbb502338446f6a501ab0b1d6.svg" alt="Cloud1" /><img class="home-icon-cloud home-icon-cloud1" src="https://www.grafikart.fr/assets/home/cloud1-d25dc994f283d78d9f20013870aa43e119fbacefbb502338446f6a501ab0b1d6.svg" alt="Cloud1" />
-        <div class="container">
-          <div class="row" style="margin-top: 30px">
-            <div class="col-m-8">
-              <h1 class="hero-title">
-                Bienvenue sur la MBM Advertising
-              </h1>
-              <p>
-               MBM vous offre une solutions publicitaires <br><strong>afin de vous garantir </strong>  un des meilleurs systèmes de <strong>monétisation</strong> pour votre marque et <strong> de sa visibilité</strong>
-              </p>
-              <p>
-                <a class="btn btn-blue" href="{{ path('regie-register') }}"><span class='icon icon-code'></span> Démarer votre campagne</a>
-              </p>
-            </div>
-          </div>
-          <div class="home-icon" id="homeicon">
-            <img class="home-icon-corkssmall" src="https://www.grafikart.fr/assets/home/corks-small-bfd15c22e15ecff9acb3272c46753fea8bde486b98b1a45225b20abad5a5291e.svg" alt="Corks small" /><img class="home-icon-corksmedium" src="https://www.grafikart.fr/assets/home/corks-medium-624f999aa27614005bc0c8ad540dc883ebc7ff64970327a0f0d4b0a815a99281.svg" alt="Corks medium" /><img class="home-icon-corksbig" src="https://www.grafikart.fr/assets/home/corks-big-95e292ed2501e368d7d2e8ee4df8cfcce28ff6a47b93eddee968ebfb03056ec2.svg" alt="Corks big" /><img class="home-icon-pc" src="https://www.grafikart.fr/assets/home/pc-d8fcf88fa277f90b2729ab8ec56681fbd3a5ef953e5b9468be3504cdb6fb5c13.svg" alt="Pc" />
-            <div class="home-icon-wireframecont">
-              <img class="home-icon-wireframe" src="https://www.grafikart.fr/assets/home/wireframe-62df81a87d026494c0cc56ee35b70eb7e3bd7d8a436bd88fbae2dc579d725dde.svg" alt="Wireframe" />
-            </div>
-            <div class="home-icon-screen"></div>
-          </div>
-        </div>
-      </div>
-    <div class="sidebar-sticky s-hidden">
-      <div class="sidebar-sticky__container">
-        <h2 class="title title-small">
-          Nos Partenaires
-        </h2>
-        <div class="list-group">
-          <a class="list-group-item with-img" href="https://www.celio.com/" target="_blank"><img src="https://www.les-flaneries.com/media/images-max-1140-w/celio__022399800_1515_27042017.jpg" width="30" height="30" />Celio</a>
-          <a class="list-group-item with-img" href="https://www.adidas.fr/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR03J9WSVOEjO3hz2afn4BfQM3uLMRuxzSE2rOsSkx7sqAOqtdP&usqp=CAU" width="30" height="30" />Adidas</a>
-          <a class="list-group-item with-img" href="https://www.devred.com/" target="_blank"><img src="https://www.rouenstsever.com/siteassets/devred.png" width="30" height="30" />Devred</a>
-          <a class="list-group-item with-img" href="https://www.levi.com/FR/fr_FR/" target="_blank"><img src="data:image/png;base64,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" width="30" height="30" />Levis</a>
-          <a class="list-group-item with-img" href="https://www.nike.com/fr/" target="_blank"><img src="data:image/png;base64,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" width="30" height="30" />Nike</a>
-          <a class="list-group-item with-img" href="https://www.apc.fr/frfr/" target="_blank"><img src="https://46fjj12eeht73lsxezcqpvlt-wpengine.netdna-ssl.com/wp-content/uploads/2018/04/a-p-c.png" width="30" height="30" />APC</a>
-          <a class="list-group-item with-img" href="https://www2.hm.com/fr_fr/index.html" target="_blank"><img src="https://ceowatermandate.org/wp-content/uploads/2017/08/HM.png" width="30" height="30" />H&M</a>
-          
-        </div>
-        
- 
-      </div>
-    </div>
-  
-    <footer class="footer" style="background-color:#404852">
-     
-      </footer>
+		<div class="has-stick-sidebar">
+			<div class="hero" style="height: 502px;">
+				<img class="home-icon-cloud home-icon-cloud2" src="https://www.grafikart.fr/assets/home/cloud2-86f06fadb95e43e931b839423a137694beae78a246d782acf2b6341693b7d91f.svg" alt="Cloud2"/><img class="home-icon-cloud home-icon-cloud2" src="https://www.grafikart.fr/assets/home/cloud2-86f06fadb95e43e931b839423a137694beae78a246d782acf2b6341693b7d91f.svg" alt="Cloud2"/><img class="home-icon-cloud home-icon-cloud1" src="https://www.grafikart.fr/assets/home/cloud1-d25dc994f283d78d9f20013870aa43e119fbacefbb502338446f6a501ab0b1d6.svg" alt="Cloud1"/><img class="home-icon-cloud home-icon-cloud1" src="https://www.grafikart.fr/assets/home/cloud1-d25dc994f283d78d9f20013870aa43e119fbacefbb502338446f6a501ab0b1d6.svg" alt="Cloud1"/>
+				<div class="container">
+					<div class="row" style="margin-top: 30px">
+						<div class="col-m-8">
+							<h1 class="hero-title">
+								Bienvenue sur la MBM Advertising
+							</h1>
+							<p>
+								MBM vous offre une solutions publicitaires
+								<br><strong>afin de vous garantir
+								</strong>
+								un des meilleurs systèmes de
+								<strong>monétisation</strong>
+								pour votre marque et
+								<strong>
+									de sa visibilité</strong>
+							</p>
+							<p>
+								<a class="btn btn-blue" href="{{ path('regie-register') }}">
+									<span class='icon icon-code'></span>
+									Démarer votre campagne</a>
+							</p>
+						</div>
+					</div>
+					<div class="home-icon" id="homeicon">
+						<img class="home-icon-corkssmall" src="https://www.grafikart.fr/assets/home/corks-small-bfd15c22e15ecff9acb3272c46753fea8bde486b98b1a45225b20abad5a5291e.svg" alt="Corks small"/><img class="home-icon-corksmedium" src="https://www.grafikart.fr/assets/home/corks-medium-624f999aa27614005bc0c8ad540dc883ebc7ff64970327a0f0d4b0a815a99281.svg" alt="Corks medium"/><img class="home-icon-corksbig" src="https://www.grafikart.fr/assets/home/corks-big-95e292ed2501e368d7d2e8ee4df8cfcce28ff6a47b93eddee968ebfb03056ec2.svg" alt="Corks big"/><img class="home-icon-pc" src="https://www.grafikart.fr/assets/home/pc-d8fcf88fa277f90b2729ab8ec56681fbd3a5ef953e5b9468be3504cdb6fb5c13.svg" alt="Pc"/>
+						<div class="home-icon-wireframecont">
+							<img class="home-icon-wireframe" src="https://www.grafikart.fr/assets/home/wireframe-62df81a87d026494c0cc56ee35b70eb7e3bd7d8a436bd88fbae2dc579d725dde.svg" alt="Wireframe"/>
+						</div>
+						<div class="home-icon-screen"></div>
+					</div>
+				</div>
+			</div>
+			<div class="sidebar-sticky s-hidden">
+				<div class="sidebar-sticky__container">
+					<h2 class="title title-small">
+						Nos Partenaires
+					</h2>
+					<div class="list-group">
+						<a class="list-group-item with-img" href="https://www.celio.com/" target="_blank"><img src="https://www.les-flaneries.com/media/images-max-1140-w/celio__022399800_1515_27042017.jpg" width="30" height="30"/>Celio</a>
+						<a class="list-group-item with-img" href="https://www.adidas.fr/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR03J9WSVOEjO3hz2afn4BfQM3uLMRuxzSE2rOsSkx7sqAOqtdP&usqp=CAU" width="30" height="30"/>Adidas</a>
+						<a class="list-group-item with-img" href="https://www.devred.com/" target="_blank"><img src="https://www.rouenstsever.com/siteassets/devred.png" width="30" height="30"/>Devred</a>
+						<a class="list-group-item with-img" href="https://www.levi.com/FR/fr_FR/" target="_blank"><img src="data:image/png;base64,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" width="30" height="30"/>Levis</a>
+						<a class="list-group-item with-img" href="https://www.nike.com/fr/" target="_blank"><img src="data:image/png;base64,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" width="30" height="30"/>Nike</a>
+						<a class="list-group-item with-img" href="https://www.apc.fr/frfr/" target="_blank"><img src="https://46fjj12eeht73lsxezcqpvlt-wpengine.netdna-ssl.com/wp-content/uploads/2018/04/a-p-c.png" width="30" height="30"/>APC</a>
+						<a class="list-group-item with-img" href="https://www2.hm.com/fr_fr/index.html" target="_blank"><img src="https://ceowatermandate.org/wp-content/uploads/2017/08/HM.png" width="30" height="30"/>H&M</a>
+					</div>
+				</div>
+			</div>
 
-    {# <div class="js-vue">
-      <backtotop></backtotop>
-    </div> #}
-    {# <div class="js-vue">
-      <flash></flash>
-    </div> #}
-  </div>
-  {# <a class="topbar-logo" style="background-color: white;" href="/"></a> #}
-  {# <script>
-    window.TECHNOLOGIES = {
-      "jekyll": ["Jekyll", 1, 0],
-      "postcss": ["PostCSS", 1, 0],
-      "google-chrome": ["Google Chrome", 2, 0],
-      "jquery": ["jQuery", 65, 0],
-      "mysql": ["MySQL", 30, 1],
-      "filezilla": ["Filezilla", 2, 0],
-      "cron": ["cron", 1, 0],
-      "rest": ["REST", 1, 0],
-      "twig": ["Twig", 1, 0],
-      "after-effects": ["After Effects", 3, 0],
-      "bower": ["Bower", 1, 0],
-      "dploy": ["Dploy", 1, 0],
-      "javascript": ["JavaScript", 70, 3],
-      "ufw": ["ufw", 1, 0],
-      "phpstorm": ["PHPStorm", 12, 1],
-      "sublime-text": ["Sublime Text", 6, 0],
-      "vuejs": ["VueJS", 21, 1],
-      "trello": ["Trello", 1, 0],
-      "ftp": ["FTP", 1, 0],
-      "materialize": ["Materialize", 1, 0],
-      "ansible": ["Ansible", 3, 1],
-      "lodash": ["lodash", 1, 0],
-      "deepin": ["DeepIn", 1, 0],
-      "sinatra": ["Sinatra", 1, 0],
-      "meteor": ["Meteor", 2, 0],
-      "jade": ["Jade", 1, 0],
-      "antergos": ["Antergos", 1, 0],
-      "google-maps": ["Google Maps", 2, 0],
-      "css": ["CSS", 113, 2],
-      "ungit": ["Ungit", 1, 0],
-      "browsersync": ["BrowserSync", 1, 0],
-      "yarn": ["Yarn", 1, 0],
-      "logstash": ["Logstash", 1, 0],
-      "redis": ["Redis", 2, 0],
-      "socket-io": ["Socket.io", 2, 0],
-      "linux": ["Linux", 1, 0],
-      "postfix": ["postfix", 1, 0],
-      "wordplate": ["Wordplate", 1, 0],
-      "ssh": ["SSH", 2, 0],
-      "seo": ["SEO", 1, 0],
-      "macos": ["MacOs", 2, 0],
-      "nodewebkit": ["NodeWebkit", 1, 0],
-      "jquery-ui": ["jQuery UI", 3, 0],
-      "markdown": ["Markdown", 1, 0],
-      "prepros": ["Prepros", 1, 0],
-      "openstreetmap": ["OpenStreetMap", 1, 0],
-      "svelte": ["Svelte", 1, 0],
-      "laravel": ["Laravel", 48, 1],
-      "maildev": ["Maildev", 1, 0],
-      "react": ["React", 3, 0],
-      "redux": ["Redux", 1, 0],
-      "mobx": ["MobX", 1, 0],
-      "gulp": ["gulp", 3, 0],
-      "mjml": ["mjml", 1, 0],
-      "travis-ci": ["Travis CI", 1, 0],
-      "coffeescript": ["CoffeeScript", 1, 0],
-      "affinity-designer": ["Affinity Designer", 1, 0],
-      "windows": ["Windows", 1, 0],
-      "cakephp": ["CakePHP", 67, 0],
-      "phinx": ["Phinx", 1, 0],
-      "paypal": ["PayPal", 4, 0],
-      "virtualbox": ["VirtualBox", 2, 0],
-      "rss": ["RSS", 1, 0],
-      "flash": ["Flash", 15, 0],
-      "capistrano": ["Capistrano", 1, 0],
-      "make": ["Make", 1, 0],
-      "laravel-nova": ["Laravel Nova", 1, 0],
-      "brackets": ["Brackets", 1, 0],
-      "grunt": ["Grunt", 1, 0],
-      "composer": ["Composer", 2, 0],
-      "swagger": ["Swagger", 1, 0],
-      "yaml": ["YAML", 1, 0],
-      "parcel": ["Parcel", 1, 0],
-      "indesign": ["InDesign", 1, 0],
-      "cordova": ["Cordova", 4, 0],
-      "kibana": ["Kibana", 1, 0],
-      "ruby-on-rails": ["Ruby on Rails", 35, 1],
-      "bootstrap": ["Bootstrap", 1, 0],
-      "html": ["HTML", 21, 1],
-      "ngrok": ["Ngrok", 1, 0],
-      "typescript": ["TypeScript", 4, 0],
-      "vuerouter": ["VueRouter", 1, 0],
-      "adobe-premiere-pro": ["Adobe Premiere Pro", 1, 0],
-      "reactnative": ["ReactNative", 2, 0],
-      "photoshop": ["Photoshop", 15, 0],
-      "avocode": ["Avocode", 1, 0],
-      "merise": ["Merise", 6, 0],
-      "elasticsearch": ["Elasticsearch", 2, 0],
-      "algorithmique": ["Algorithmique", 11, 1],
-      "ruby": ["Ruby", 15, 1],
-      "compass": ["Compass", 15, 1],
-      "nodejs": ["NodeJS", 11, 1],
-      "gitkraken": ["GitKraken", 1, 0],
-      "fail2ban": ["Fail2ban", 1, 0],
-      "docker": ["Docker", 5, 0],
-      "illustrator": ["Illustrator", 2, 0],
-      "foundation": ["Foundation", 1, 0],
-      "unix": ["Unix", 9, 1],
-      "sourcetree": ["SourceTree", 1, 0],
-      "preact": ["Preact", 4, 0],
-      "webrtc": ["WebRTC", 1, 0],
-      "stripe": ["Stripe", 2, 0],
-      "vagrant": ["Vagrant", 3, 0],
-      "fish": ["Fish", 1, 0],
-      "apache": ["Apache", 5, 0],
-      "jwt": ["JWT", 1, 0],
-      "nginx": ["Nginx", 9, 0],
-      "less": ["Less", 1, 0],
-      "http": ["HTTP", 1, 0],
-      "firebug": ["Firebug", 1, 0],
-      "rsync": ["Rsync", 1, 0],
-      "netbeans": ["Netbeans", 3, 0],
-      "browserify": ["Browserify", 1, 0],
-      "internet-explorer": ["Internet Explorer", 1, 0],
-      "phpunit": ["PHPUnit", 2, 0],
-      "sass": ["SASS", 13, 1],
-      "zend-expressive": ["Zend Expressive", 1, 0],
-      "vim": ["Vim", 1, 0],
-      "visual-studio-code": ["Visual Studio Code", 3, 0],
-      "yeoman": ["Yeoman", 1, 0],
-      "svg": ["SVG", 2, 0],
-      "symfony": ["Symfony", 73, 2],
-      "let-s-encrypt": ["Let's Encrypt", 1, 0],
-      "elixir": ["Elixir", 1, 0],
-      "dns": ["DNS", 1, 0],
-      "golang": ["Golang", 1, 0],
-      "github": ["Github", 1, 0],
-      "vuex": ["VueX", 1, 0],
-      "webpack": ["Webpack", 15, 1],
-      "boostrap": ["Boostrap", 1, 0],
-      "php": ["PHP", 257, 5],
-      "angular": ["Angular", 14, 0],
-      "titanium": ["Titanium", 2, 0],
-      "git": ["git", 19, 1],
-      "wordpress": ["WordPress", 23, 0],
-      "i3wm": ["i3wm", 2, 0]
-    }
-  </script> #}
-  {# <script src="/assets/application.c0f78dc92304e8d3d2c5.js" data-turbolinks-eval="false" data-turbolinks-suppress-warning=""></script> #}
+			<footer class="footer" style="background-color:#404852"></footer>
 
-</body>
+
+		</div>
+
+
+	</body>
 
 </html>
