@@ -408,6 +408,15 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
+     /**
+     * @Route("/regie-detail", name="regie-detail")
+     */
+    public function regieDetail()
+    {
+        return $this->render('regie/regie-detail.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
     
     
 }
