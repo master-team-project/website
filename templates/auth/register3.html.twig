@@ -1,13 +1,16 @@
 {% extends 'base.html.twig' %}
 
-{% block title %} {{ parent() }} MBM - Register Page {% endblock %}
+{% block title %}
+	{{ parent() }}
+	MBM - Register Page
+{% endblock %}
 
 {% block header '' %}
 
 {% block stylesheets %}
-    {{ parent() }}
-    <link rel="stylesheet" href="css/mbm/register.css">
-    <link rel="stylesheet" href="css/mbm/home.css">
+	{{ parent() }}
+	<link rel="stylesheet" href="css/mbm/register.css">
+	<link rel="stylesheet" href="css/mbm/home.css">
 
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
@@ -21,97 +24,78 @@
 
 {% block content %}
 
-    <div class="wrapper-content">
-        <div class="wrapper-content__container">
-            <div class="wrapper-content__container__left-side" style="background-image: url('images/bank/register3.jpg');width:56%;">
-            </div>
-            <div class="wrapper-content__container__right-side" style="width:44%;">
-                <form class="login-form validate-form">
-                    
-                    <span class="login-form__title">
-                        Inscription
-                    </span>
+	<div class="wrapper-content">
+		<div class="wrapper-content__container">
+			<div class="wrapper-content__container__left-side" style="background-image: url('images/bank/register3.jpg');width:56%;"></div>
+			<div class="wrapper-content__container__right-side" style="width:44%;">
+				<form class="login-form validate-form">
 
-                    <div class="login-form__timeline">
-                        <div class="login-form__timeline__span__wrap">
-                            <span class="login-form__timeline__span">1</span>
-                            <span class="login-form__timeline__span_text">Infos personnelles</span>
-                        </div>
-                        <hr class="login-form__timeline__hr">
-                        <div class="login-form__timeline__span__wrap">
-                            <span class="login-form__timeline__span active">2</span>
-                            <span class="login-form__timeline__span_text">Goûts</span>
-                        </div>
-                        <hr class="login-form__timeline__hr">
-                        <div class="login-form__timeline__span__wrap">
-                            <span class="login-form__timeline__span">3</span>
-                            <span class="login-form__timeline__span_text">Fin</span>
-                        </div>
-                    </div>
+					<span class="login-form__title">
+						Inscription
+					</span>
 
-                    
+					<div class="login-form__timeline">
+						<div class="login-form__timeline__span__wrap">
+							<span class="login-form__timeline__span">1</span>
+							<span class="login-form__timeline__span_text">Infos personnelles</span>
+						</div>
+						<hr class="login-form__timeline__hr">
+						<div class="login-form__timeline__span__wrap">
+							<span class="login-form__timeline__span active">2</span>
+							<span class="login-form__timeline__span_text">Goûts</span>
+						</div>
+						<hr class="login-form__timeline__hr">
+						<div class="login-form__timeline__span__wrap">
+							<span class="login-form__timeline__span">3</span>
+							<span class="login-form__timeline__span_text">Fin</span>
+						</div>
+					</div>
+
+
 					<div class="col-md-12">
 						<h4>Comment vous habillez vous pour aller travailler ?</h4>
 					</div>
-                    <div class="container">
-                        <div class="row gp-img" style="margin-top: 20px;">
-                            <div class="col-md-5">
-                                <img class="card-img-top" src="images/bank/work1.jpg"></img>
-                            </div>
-                            <div class="col-md-5">
-                                <img class="card-img-top" src="images/bank/work2.jpg"></img>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-5">
-                                <input class="col-md-1 col-md-offset-2" type="checkbox" name="choice" value="option1">
-                            </div>
-                            <div class="col-md-5">
-                                <input class="col-md-1 col-md-offset-2" type="checkbox" name="choice" value="option2">
-                            </div>
-                        </div>
-                        <div class="row gp-img" style="margin-top: 20px;">
-                            <div class="col-md-5">
-                                <img class="card-img-top" src="https://static1.terrafemina.com/articles/6/30/18/96/@/373721-pourquoi-mark-zuckerberg-porte-les-memes-622x0-1.jpg"></img>
-                            </div>
-                            <div class="col-md-5">
-                                <img class="card-img-top" src="https://images.pexels.com/photos/2059696/pexels-photo-2059696.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></img>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-5">
-                                <input class="col-md-1 col-md-offset-2" type="checkbox" name="choice" value="option3">
-                            </div>
-                            <div class="col-md-5">
-                                <input class="col-md-1 col-md-offset-2" type="checkbox" name="choice" value="option4">
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="container-login-form-btn">
-                        <div class="wrap-login-form-btn">
-                            <div class="login-form-bgbtn"></div>
-                            <button class="login-form-btn">
-                                <a href="{{ path('register4') }}">Suivant</a> 
-                            </button>
-                        </div>
-                    </div>
-                </form> 
-                
-                
+					<div class="container">
+						<div class="row gp-img" style="margin-top: 20px;">
+							<div class="col-md-5">
+								<img class="card-img-top" src="images/bank/work1.jpg"></img>
+						</div>
+						<div class="col-md-5">
+							<img class="card-img-top" src="images/bank/work2.jpg"></img>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-5">
+						<input class="col-md-1 col-md-offset-2" type="checkbox" name="choice" value="option1">
+					</div>
+					<div class="col-md-5">
+						<input class="col-md-1 col-md-offset-2" type="checkbox" name="choice" value="option2">
+					</div>
+				</div>
+				<div class="row gp-img" style="margin-top: 20px;">
+					<div class="col-md-5">
+						<img class="card-img-top" src="https://static1.terrafemina.com/articles/6/30/18/96/@/373721-pourquoi-mark-zuckerberg-porte-les-memes-622x0-1.jpg"></img>
+				</div>
+				<div class="col-md-5">
+					<img class="card-img-top" src="https://images.pexels.com/photos/2059696/pexels-photo-2059696.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></img>
 			</div>
-            
-                   
-                  
-                  
-                  
+		</div>
+		<div class="row">
+			<div class="col-md-5">
+				<input class="col-md-1 col-md-offset-2" type="checkbox" name="choice" value="option3">
+			</div>
+			<div class="col-md-5">
+				<input class="col-md-1 col-md-offset-2" type="checkbox" name="choice" value="option4">
+			</div>
+		</div>
+	</div>
 
-                          
-                </form>
-            </div>
-        </div>
-    </div>
-       
-{% endblock %}
-
-{% block footer '' %}
+	<div class="container-login-form-btn">
+		<div class="wrap-login-form-btn">
+			<div class="login-form-bgbtn"></div>
+			<button class="login-form-btn">
+				<a href="{{ path('register4') }}">Suivant</a>
+			</button>
+		</div>
+	</div>
+</form></div></form></div></div></div>{% endblock %}{% block footer '' %}
